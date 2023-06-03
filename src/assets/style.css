@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  font-family: Lato;
+}
+
+.content-container {
+  @apply w-full mx-auto my-0 max-w-[1200px] px-4 lg:px-0
+}
+
+.button {
+  @apply bg-pink py-4 px-8 text-white text-lg font-bold font-josefin rounded hover:bg-blue transition-colors active:bg-dark-blue
+}
+
+.lock-scroll {
+  overflow-y: hidden;
+}
