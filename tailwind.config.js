@@ -22,6 +22,7 @@ export default {
       'pantone-purple': '#E0D3F5',
       'pale-purple': '#8A8FB9',
       'purple-white': '#F6F7FB',
+      'light-gray': '#F7F7F7',
       purple: '#7E33E0',
       'off-purple': '#9F63B5',
       white: '#ffffff',

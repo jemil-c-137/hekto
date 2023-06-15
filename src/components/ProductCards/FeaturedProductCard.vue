@@ -1,23 +1,9 @@
 <template>
   <div class="w-full group shadow-2xl max-w-[270px] mx-auto my-0">
-    <div class="h-[236px] bg-purple-white flex justify-center items-center relative">
-      <div class="hidden group-hover:flex absolute top-2 left-3 gap-x-1">
-        <span
-          class="p-1 rounded-full bg-pale-purple hover:bg-off-navy-blue hover:cursor-pointer transition-colors"
-        >
-          <CartLogo class="w-4 text-white" />
-        </span>
-        <span
-          class="p-1 rounded-full bg-pale-purple hover:bg-off-navy-blue hover:cursor-pointer transition-colors"
-        >
-          <FavoriteLogo class="w-4 text-white" />
-        </span>
-        <span
-          class="p-1 rounded-full bg-pale-purple hover:bg-off-navy-blue hover:cursor-pointer transition-colors"
-        >
-          <ZoomInLogo class="w-4 text-white" />
-        </span>
-      </div>
+    <div
+      class="h-[236px] bg-purple-white group-hover:bg-light-gray flex justify-center items-center relative"
+    >
+      <CardActions />
       <img :src="imageUrl" alt="" />
       <button
         class="hidden group-hover:block absolute bottom-4 hover:bg-blue active:bg-dark-navy transition-colors rounded bg-green py-2 px-4 text-white font-josefin"
@@ -41,9 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import FavoriteLogo from '../../components/logos/FavoriteLogo.vue'
-import CartLogo from '../../components/logos/CartLogo.vue'
-import ZoomInLogo from '../../components/logos/ZoomInLogo.vue'
+import CardActions from './CardActions.vue'
 
 defineProps<{
   productName: string

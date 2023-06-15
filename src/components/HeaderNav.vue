@@ -98,18 +98,18 @@
 </template>
 
 <script setup lang="ts">
-import PhoneLogo from './logos/PhoneLogo.vue'
-import MailLogo from './logos/MailLogo.vue'
-import LoginLogo from './logos/LoginLogo.vue'
-import FavoriteLogo from './logos/FavoriteLogo.vue'
-import CartLogo from './logos/CartLogo.vue'
-import SearchLogo from './logos/SearchLogo.vue'
+import PhoneLogo from './svg/logos/PhoneLogo.vue'
+import MailLogo from './svg/logos/MailLogo.vue'
+import LoginLogo from './svg/logos/LoginLogo.vue'
+import FavoriteLogo from './svg/logos/FavoriteLogo.vue'
+import CartLogo from './svg/logos/CartLogo.vue'
+import SearchLogo from './svg/logos/SearchLogo.vue'
 import { watch, ref } from 'vue'
 
 const showMobileNav = ref<boolean>(false)
 
 watch(showMobileNav, (value) => {
-  const body = document.body;
+  const body = document.body
   if (value) {
     body.classList.add('lock-scroll')
   } else {
