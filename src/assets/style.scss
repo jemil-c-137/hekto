@@ -4,16 +4,21 @@
 @tailwind utilities;
 @import './typography.scss';
 
-html, body {
+html,
+body {
   font-family: Lato;
 }
 
 .content-container {
-  @apply w-full mx-auto my-0 max-w-[1200px] px-4 lg:px-0
+  @apply w-full mx-auto my-0 max-w-[1200px] px-4 lg:px-0;
 }
 
 .button {
-  @apply bg-pink py-4 px-8 text-white text-lg font-bold font-josefin rounded hover:bg-blue transition-colors active:bg-dark-blue
+  @apply bg-pink py-4 px-8 text-white text-lg font-bold font-josefin rounded hover:bg-blue transition-colors active:bg-dark-blue;
+}
+
+.link {
+  @apply text-pink underline font-medium underline-offset-4 hover:text-blue transition-colors;
 }
 
 .lock-scroll {

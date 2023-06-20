@@ -105,17 +105,32 @@
     </section>
     <section class="content-container">
       <h3 class="section-title mb-12">Trending Products</h3>
-      <div class="grid grid-cols-2 lg:grid-cols-4">
-        <div class="bg-white p-3 shadow-2xl">
-          <div class="bg-purple-white max-w-[250px] flex items-center justify-center py-7 mb-4">
-            <img src="../assets/trending/gray-chair.png" alt="" />
-          </div>
-          <div class="text-center mb-5">
-            <p>Cantilever chair</p>
-            <span class="font-josefin mr-3">$26.00</span>
-            <span class="font-josefin line-through opacity-30 text-sm">$42.00</span>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+        <TrendingProduct
+          v-for="product in trendingProducts"
+          :key="product.id"
+          :imageUrl="product.imageUrl"
+          :price="product.price"
+          :name="product.name"
+          :oldPrice="product.oldPrice"
+        />
+      </div>
+      <div class="grid grid-cols-1 grid-rows-[(repeat_3,_minmax(auto,_270px))] gap-y-10">
+        <div class="bg-pantone-purple pt-9">
+          <p class="pl-5 font-josefin text-2xl font-semibold">23% off in all products</p>
+          <a href="#" class="pl-5 link">Shop now</a>
+          <div class="flex justify-end items-center">
+            <img src="../assets/sale/clock.png" alt="" />
           </div>
         </div>
+        <div class="bg-purple-white pt-9">
+          <p class="pl-5 font-josefin text-2xl font-semibold">23% off in all products</p>
+          <a href="#" class="pl-5 link">Shop now</a>
+          <div class="flex justify-end items-center">
+            <img src="../assets/sale/comod.png" alt="" />
+          </div>
+        </div>
+        <div></div>
       </div>
     </section>
   </main>
@@ -131,6 +146,7 @@ import CustomerSupport from '../components/svg/CustomerSupport.vue'
 import FreeDelivery from '../components/svg/FreeDelivery.vue'
 import PremiumQuality from '../components/svg/PremiumQuality.vue'
 import BulletList from '../components/UI/BulletList.vue'
+import TrendingProduct from '../components/ProductCards/TrendingProduct.vue'
 
 const productsData = [
   {
@@ -207,8 +223,30 @@ const trendingProducts = [
   {
     name: 'Cantilever chair',
     price: '$26.00',
-    oldPrice: "$42.00",
-    imageUrl: "../assets/trending/gray-chair.png"
+    oldPrice: '$42.00',
+    imageUrl: 'src/assets/trending/gray-chair.png',
+    id: 1
+  },
+  {
+    name: 'Cantilever chair',
+    price: '$26.00',
+    oldPrice: '$42.00',
+    imageUrl: 'src/assets/trending/white-chair.png',
+    id: 4
+  },
+  {
+    name: 'Cantilever chair',
+    price: '$26.00',
+    oldPrice: '$42.00',
+    imageUrl: 'src/assets/trending/black-chair.png',
+    id: 2
+  },
+  {
+    name: 'Cantilever chair',
+    price: '$26.00',
+    oldPrice: '$42.00',
+    imageUrl: 'src/assets/trending/red-chair.png',
+    id: 3
   }
 ]
 
