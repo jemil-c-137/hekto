@@ -88,9 +88,7 @@
         >
           <img class="mx-auto my-0 max-w-full h-auto" src="../assets/b-sofe.png" alt="" />
           <div class="w-full">
-            <h5 class="font-josefin text-4xl font-bold mb-7">
-              Unique Features Of leatest & Trending Poducts
-            </h5>
+            <h5 class="product-title mb-7">Unique Features Of leatest & Trending Poducts</h5>
             <BulletList :items="productList" class="mb-8" />
             <div class="flex flex-row items-center gap-8">
               <button class="button !px-6 !py-4 max-w-fit">Add to cart</button>
@@ -115,22 +113,94 @@
           :oldPrice="product.oldPrice"
         />
       </div>
-      <div class="grid grid-cols-1 grid-rows-[(repeat_3,_minmax(auto,_270px))] gap-y-10">
-        <div class="bg-pantone-purple pt-9">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[3fr_3fr_2fr] grid-rows-[(repeat_3,_minmax(auto,_270px))] gap-y-10 gap-x-8 mb-48"
+      >
+        <div
+          class="lg:col-start-1 lg:col-end-1 bg-pantone-purple pt-9 shadow-2xl rounded hover:bg-pale-purple cursor-pointer"
+        >
           <p class="pl-5 font-josefin text-2xl font-semibold">23% off in all products</p>
           <a href="#" class="pl-5 link">Shop now</a>
           <div class="flex justify-end items-center">
             <img src="../assets/sale/clock.png" alt="" />
           </div>
         </div>
-        <div class="bg-purple-white pt-9">
+        <div
+          class="lg:col-start-2 lg:col-end-3 bg-purple-white pt-9 shadow-2xl hover:bg-light cursor-pointer"
+        >
           <p class="pl-5 font-josefin text-2xl font-semibold">23% off in all products</p>
           <a href="#" class="pl-5 link">Shop now</a>
           <div class="flex justify-end items-center">
             <img src="../assets/sale/comod.png" alt="" />
           </div>
         </div>
-        <div></div>
+        <div
+          class="col-span-full lg:col-start-3 lg:col-end-3 md:grid-col h-full flex flex-wrap justify-between md:flex-row gap-6"
+        >
+          <div class="grid grid-cols-[1fr_2fr] cursor-pointer group shadow rounded max-w-[270px]">
+            <div
+              class="bg-purple-white flex justify-center items-center group-hover:bg-pantone-purple"
+            >
+              <img src="src/assets/sale/chair11.png" alt="" />
+            </div>
+            <div class="bg-white px-2 group-hover:bg-off-navy-blue group-hover:text-white">
+              <p class="font-semibold">Executive Seat chair</p>
+              <p class="line-through text-sm">$32.00</p>
+              <p class="text-sm">$20.00</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-[1fr_2fr] cursor-pointer group shadow rounded max-w-[270px]">
+            <div
+              class="bg-purple-white flex justify-center items-center group-hover:bg-pantone-purple"
+            >
+              <img src="src/assets/sale/chair11.png" alt="" />
+            </div>
+            <div class="bg-white px-2 group-hover:bg-off-navy-blue group-hover:text-white">
+              <p class="font-semibold">Executive Seat chair</p>
+              <p class="line-through text-sm">$32.00</p>
+              <p class="text-sm">$20.00</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-[1fr_2fr] cursor-pointer group shadow rounded max-w-[270px]">
+            <div
+              class="bg-purple-white flex justify-center items-center group-hover:bg-pantone-purple"
+            >
+              <img src="src/assets/sale/chair11.png" alt="" />
+            </div>
+            <div class="bg-white px-2 group-hover:bg-off-navy-blue group-hover:text-white">
+              <p class="font-semibold">Executive Seat chair</p>
+              <p class="line-through text-sm">$32.00</p>
+              <p class="text-sm">$20.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h5 class="section-title">Discount items</h5>
+        <div>
+          <div>
+            <img src="src/assets/discount/wood-chair.png" alt="" />
+          </div>
+          <div>
+            <p class="product-title mb-4">20% Discount of All Products</p>
+            <p class="font-josefin text-pink text-xl mb-5">Eams Sofa Compact</p>
+            <p class="leading-8 text-pale-purple mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget feugiat habitasse
+              nec, bibendum condimentum.
+            </p>
+            <ol class="text-pale-purple">
+              <li><span class="mr-1 text-off-purple">&#10004;</span>Material expose like metals</li>
+              <li><span class="mr-1 text-off-purple">&#10004;</span>Simple neutral colours.</li>
+              <li>
+                <span class="mr-1 text-off-purple">&#10004;</span>Clear lines and geomatric figures
+              </li>
+              <li><span class="mr-1 text-off-purple">&#10004;</span>Material expose like metals</li>
+            </ol>
+            <button class="button">Shop Now</button>
+          </div>
+        </div>
       </div>
     </section>
   </main>

@@ -1,9 +1,9 @@
 <template>
   <div
-    class="bg-white p-3 shadow-2xl group hover:bg-off-navy-blue cursor-pointer rounded hover:shadow-blue"
+    class="bg-white p-3 shadow-2xl max-w-[250px] w-full mx-auto my-0 group hover:bg-off-navy-blue cursor-pointer rounded hover:shadow-blue"
   >
     <div
-      class="relative bg-purple-white max-w-[250px] max-h-[245px] h-full flex items-center justify-center py-7 mb-4 group-hover:bg-white rounded group-hover:shadow group-hover:shadow-white"
+      class="relative bg-purple-white max-h-[245px] h-full flex items-center justify-center py-7 mb-4 group-hover:bg-white rounded group-hover:shadow group-hover:shadow-white"
     >
       <img :src="imageUrl" alt="" />
       <CardActions placement="top-left" />
