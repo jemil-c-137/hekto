@@ -202,6 +202,51 @@
           </div>
         </div>
       </div>
+      <div>
+        <h5 class="section-title mb-32">Top Categories</h5>
+
+        <div class="grid-cols-1">
+          <div class="text-center w-[270px] mx-auto my-0">
+            <div
+              class="w-full h-[270px] bg-purple-white rounded-full flex justify-center items-center shadow-md hover:shadow-purple hover:shadow-2xl mb-10"
+            >
+              <img src="src/assets/chair5.png" alt="" />
+            </div>
+            <p class="font-josefin text-xl">Mini LCW Chair</p>
+            <p class="font-josefin">$56.00</p>
+          </div>
+
+          <div class="text-center w-[270px] mx-auto my-0">
+            <div
+              class="w-full h-[270px] bg-purple-white rounded-full flex justify-center items-center shadow-md hover:shadow-purple hover:shadow-2xl mb-10"
+            >
+              <img src="src/assets/chair2.png" alt="" />
+            </div>
+            <p class="font-josefin text-xl">Mini LCW Chair</p>
+            <p class="font-josefin">$56.00</p>
+          </div>
+
+          <div class="text-center w-[270px] mx-auto my-0">
+            <div
+              class="w-full h-[270px] bg-purple-white rounded-full flex justify-center items-center shadow-md hover:shadow-purple hover:shadow-2xl mb-10"
+            >
+              <img src="src/assets/chair3.png" alt="" />
+            </div>
+            <p class="font-josefin text-xl">Mini LCW Chair</p>
+            <p class="font-josefin">$56.00</p>
+          </div>
+
+          <div class="text-center w-[270px] mx-auto my-0">
+            <div
+              class="w-full h-[270px] bg-purple-white rounded-full flex justify-center items-center shadow-md hover:shadow-purple hover:shadow-2xl mb-10"
+            >
+              <img src="src/assets/chair4.png" alt="" />
+            </div>
+            <p class="font-josefin text-xl">Mini LCW Chair</p>
+            <p class="font-josefin">$56.00</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 </template>
