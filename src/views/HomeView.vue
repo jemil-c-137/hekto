@@ -177,7 +177,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="mb-32">
         <h5 class="section-title mb-32">Discount items</h5>
         <div class="flex flex-col md:flex-row items-center">
           <div class="mb-8">
@@ -202,23 +202,28 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="mb-32">
         <h5 class="section-title mb-32">Top Categories</h5>
 
-        <div class="grid-cols-1">
-          <div class="text-center w-[270px] mx-auto my-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <div class="text-center w-[270px] mx-auto my-0 group">
             <div
-              class="w-full h-[270px] bg-purple-white rounded-full flex justify-center items-center shadow-md hover:shadow-purple hover:shadow-2xl mb-10"
+              class="relative w-full h-[270px] bg-purple-white rounded-full flex justify-center items-center shadow-md group-hover:shadow-purple group-hover:shadow-2xl mb-10"
             >
               <img src="src/assets/chair5.png" alt="" />
+              <button
+                class="hidden group-hover:block absolute bottom-4 hover:bg-blue active:bg-dark-navy transition-colors rounded bg-green py-2 px-4 text-white font-josefin"
+              >
+                View Details
+              </button>
             </div>
             <p class="font-josefin text-xl">Mini LCW Chair</p>
             <p class="font-josefin">$56.00</p>
           </div>
 
-          <div class="text-center w-[270px] mx-auto my-0">
+          <div class="text-center w-[270px] mx-auto my-0 group">
             <div
-              class="w-full h-[270px] bg-purple-white rounded-full flex justify-center items-center shadow-md hover:shadow-purple hover:shadow-2xl mb-10"
+              class="w-full h-[270px] bg-purple-white rounded-full flex justify-center items-center shadow-md group-hover:shadow-purple group-hover:shadow-2xl mb-10"
             >
               <img src="src/assets/chair2.png" alt="" />
             </div>
@@ -226,9 +231,9 @@
             <p class="font-josefin">$56.00</p>
           </div>
 
-          <div class="text-center w-[270px] mx-auto my-0">
+          <div class="text-center w-[270px] mx-auto my-0 group">
             <div
-              class="w-full h-[270px] bg-purple-white rounded-full flex justify-center items-center shadow-md hover:shadow-purple hover:shadow-2xl mb-10"
+              class="w-full h-[270px] bg-purple-white rounded-full flex justify-center items-center shadow-md group-hover:shadow-purple group-hover:shadow-2xl mb-10"
             >
               <img src="src/assets/chair3.png" alt="" />
             </div>
@@ -236,9 +241,9 @@
             <p class="font-josefin">$56.00</p>
           </div>
 
-          <div class="text-center w-[270px] mx-auto my-0">
+          <div class="text-center w-[270px] mx-auto my-0 group">
             <div
-              class="w-full h-[270px] bg-purple-white rounded-full flex justify-center items-center shadow-md hover:shadow-purple hover:shadow-2xl mb-10"
+              class="w-full h-[270px] bg-purple-white rounded-full flex justify-center items-center shadow-md group-hover:shadow-purple group-hover:shadow-2xl mb-10"
             >
               <img src="src/assets/chair4.png" alt="" />
             </div>
@@ -248,6 +253,15 @@
         </div>
       </div>
     </section>
+    <div class="pt-56 pb-32 text-center bg-[url('src/assets/bg-palm.jpg')] bg-no-repeat">
+      <h3 class="mb-7 section-title">Get Leatest Update By Subscribe 0ur Newslater</h3>
+      <button class="button">Show Now</button>
+    </div>
+    <div class="py-32">
+      <div>
+
+      </div>
+    </div>
   </main>
 </template>
 
