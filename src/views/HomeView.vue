@@ -206,50 +206,13 @@
         <h5 class="section-title mb-32">Top Categories</h5>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-          <div class="text-center w-[270px] mx-auto my-0 group">
-            <div
-              class="relative w-full h-[270px] bg-purple-white rounded-full flex justify-center items-center shadow-md group-hover:shadow-purple group-hover:shadow-2xl mb-10"
-            >
-              <img src="src/assets/chair5.png" alt="" />
-              <button
-                class="hidden group-hover:block absolute bottom-4 hover:bg-blue active:bg-dark-navy transition-colors rounded bg-green py-2 px-4 text-white font-josefin"
-              >
-                View Details
-              </button>
-            </div>
-            <p class="font-josefin text-xl">Mini LCW Chair</p>
-            <p class="font-josefin">$56.00</p>
-          </div>
-
-          <div class="text-center w-[270px] mx-auto my-0 group">
-            <div
-              class="w-full h-[270px] bg-purple-white rounded-full flex justify-center items-center shadow-md group-hover:shadow-purple group-hover:shadow-2xl mb-10"
-            >
-              <img src="src/assets/chair2.png" alt="" />
-            </div>
-            <p class="font-josefin text-xl">Mini LCW Chair</p>
-            <p class="font-josefin">$56.00</p>
-          </div>
-
-          <div class="text-center w-[270px] mx-auto my-0 group">
-            <div
-              class="w-full h-[270px] bg-purple-white rounded-full flex justify-center items-center shadow-md group-hover:shadow-purple group-hover:shadow-2xl mb-10"
-            >
-              <img src="src/assets/chair3.png" alt="" />
-            </div>
-            <p class="font-josefin text-xl">Mini LCW Chair</p>
-            <p class="font-josefin">$56.00</p>
-          </div>
-
-          <div class="text-center w-[270px] mx-auto my-0 group">
-            <div
-              class="w-full h-[270px] bg-purple-white rounded-full flex justify-center items-center shadow-md group-hover:shadow-purple group-hover:shadow-2xl mb-10"
-            >
-              <img src="src/assets/chair4.png" alt="" />
-            </div>
-            <p class="font-josefin text-xl">Mini LCW Chair</p>
-            <p class="font-josefin">$56.00</p>
-          </div>
+          <TopCategories
+            v-for="topCategory in topCategories"
+            :key="topCategory.id"
+            :name="topCategory.name"
+            :price="topCategory.price"
+            :image-url="topCategory.imageUrl"
+          />
         </div>
       </div>
     </section>
@@ -258,9 +221,7 @@
       <button class="button">Show Now</button>
     </div>
     <div class="py-32">
-      <div>
-
-      </div>
+      <div></div>
     </div>
   </main>
 </template>
@@ -276,6 +237,7 @@ import FreeDelivery from '../components/svg/FreeDelivery.vue'
 import PremiumQuality from '../components/svg/PremiumQuality.vue'
 import BulletList from '../components/UI/BulletList.vue'
 import TrendingProduct from '../components/ProductCards/TrendingProduct.vue'
+import TopCategories from '../components/ProductCards/TopCategories.vue'
 
 const productsData = [
   {
@@ -377,6 +339,13 @@ const trendingProducts = [
     imageUrl: 'src/assets/trending/red-chair.png',
     id: 3
   }
+]
+
+const topCategories = [
+  { name: 'Mini LCW Chair', price: '$56.00', imageUrl: 'src/assets/chair5.png', id: 1 },
+  { name: 'Mini LCW Chair', price: '$56.00', imageUrl: 'src/assets/chair3.png', id: 2 },
+  { name: 'Mini LCW Chair', price: '$56.00', imageUrl: 'src/assets/chair4.png', id: 3 },
+  { name: 'Mini LCW Chair', price: '$56.00', imageUrl: 'src/assets/chair2.png', id: 4 }
 ]
 
 const productList = [
