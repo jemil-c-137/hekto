@@ -7,7 +7,7 @@
         class="mb-32 grid gap-y-6 gap-x-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center"
       >
         <FeaturedProductCard
-          v-for="product in productsList"
+          v-for="product in productsData"
           :key="product.id"
           :productName="product.name"
           :price="product.price"
@@ -216,18 +216,45 @@
         </div>
       </div>
     </section>
-    <div class="pt-56 pb-32 text-center bg-[url('src/assets/bg-palm.jpg')] bg-no-repeat">
+    <section class="pt-56 pb-32 text-center bg-[url('src/assets/bg-palm.jpg')] bg-no-repeat">
       <h3 class="mb-7 section-title">Get Leatest Update By Subscribe 0ur Newslater</h3>
       <button class="button">Show Now</button>
-    </div>
-    <div class="py-32">
-      <div></div>
-    </div>
+    </section>
+    <section class="content-container py-32">
+      <div>
+        <h5 class="section-title mb-20">Leatest Blog</h5>
+
+        <div>
+          <div>
+            <img src="src/assets/office.jpg" alt="" />
+
+            <div class="p-5 mb-8">
+              <div class="flex gap-8 mb-8">
+                <p class="flex items-baseline">
+                  <PenIcon />
+                  <span>Saber Ali </span>
+                </p>
+                <p class="flex items-baseline">
+                  <CalendarIcon />
+                  <span>21 august, 2020 </span>
+                </p>
+              </div>
+
+              <p class="mb-4 text-lg font-josefin font-bold">Top esssential Trends in 2021</p>
+              <p class="text-steel-blue leading-7">
+                More off this less hello samlande lied much over tightly circa horse taped mightly
+              </p>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import PenIcon from '../components/svg/logos/PenIcon.vue'
+import CalendarIcon from '../components/svg/logos/CalendarIcon.vue'
 import HeroSection from '../components/HeroSection.vue'
 import FeaturedProductCard from '../components/ProductCards/FeaturedProductCard.vue'
 import LatestProducts from '../components/ProductCards/LatestProducts.vue'
@@ -353,6 +380,4 @@ const productList = [
   'Reinforced with double wood dowels, glue, screw - nails corner blocks and machine nails',
   'Arms, backs and seats are structurally reinforced'
 ]
-
-const productsList = ref<typeof productsData>(productsData)
 </script>

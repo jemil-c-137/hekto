@@ -26,6 +26,7 @@ export default {
       purple: '#7E33E0',
       'off-purple': '#9F63B5',
       white: '#ffffff',
+      'steel-blue': '#72718F',
       light: '#F2F0FF'
     }
   },
