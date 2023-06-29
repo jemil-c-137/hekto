@@ -224,28 +224,14 @@
       <div>
         <h5 class="section-title mb-20">Leatest Blog</h5>
 
-        <div>
-          <div>
-            <img src="src/assets/office.jpg" alt="" />
-
-            <div class="p-5 mb-8">
-              <div class="flex gap-8 mb-8">
-                <p class="flex items-baseline">
-                  <PenIcon />
-                  <span>Saber Ali </span>
-                </p>
-                <p class="flex items-baseline">
-                  <CalendarIcon />
-                  <span>21 august, 2020 </span>
-                </p>
-              </div>
-
-              <p class="mb-4 text-lg font-josefin font-bold">Top esssential Trends in 2021</p>
-              <p class="text-steel-blue leading-7">
-                More off this less hello samlande lied much over tightly circa horse taped mightly
-              </p>  
-            </div>
-          </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8">
+          <BlogpostCard
+            v-for="post in blogposts"
+            :key="post.id"
+            :imageUrl="post.imageUrl"
+            :title="post.title"
+            :subtext="post.subtext"
+          />
         </div>
       </div>
     </section>
@@ -265,6 +251,7 @@ import PremiumQuality from '../components/svg/PremiumQuality.vue'
 import BulletList from '../components/UI/BulletList.vue'
 import TrendingProduct from '../components/ProductCards/TrendingProduct.vue'
 import TopCategories from '../components/ProductCards/TopCategories.vue'
+import BlogpostCard from '../components/Blogpost/BlogpostCard.vue'
 
 const productsData = [
   {
@@ -379,5 +366,26 @@ const productList = [
   'All frames constructed with hardwood solids and laminates',
   'Reinforced with double wood dowels, glue, screw - nails corner blocks and machine nails',
   'Arms, backs and seats are structurally reinforced'
+]
+
+const blogposts = [
+  {
+    title: 'Top esssential Trends in 2021',
+    subtext: 'More off this less hello samlande lied much over tightly circa horse taped mightly',
+    imageUrl: 'src/assets/office.jpg',
+    id: 1
+  },
+  {
+    title: 'Top esssential Trends in 2021',
+    subtext: 'More off this less hello samlande lied much over tightly circa horse taped mightly',
+    imageUrl: 'src/assets/hall.jpg',
+    id: 2
+  },
+  {
+    title: 'Top esssential Trends in 2021',
+    subtext: 'More off this less hello samlande lied much over tightly circa horse taped mightly',
+    imageUrl: 'src/assets/living-room.jpg',
+    id: 3
+  }
 ]
 </script>
