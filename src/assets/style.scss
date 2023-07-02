@@ -24,3 +24,7 @@ body {
 .lock-scroll {
   overflow-y: hidden;
 }
+
+.logo-text {
+  @apply font-josefin text-4xl text-dark-blue font-bold
+}

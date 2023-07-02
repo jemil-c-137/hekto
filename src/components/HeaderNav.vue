@@ -56,7 +56,7 @@
     </div>
 
     <nav class="content-container flex flex-col md:flex-row justify-between items-center py-5">
-      <div><h3 class="font-josefin text-4xl text-dark-blue font-bold">Hekto</h3></div>
+      <div><h3 class="logo-text">Hekto</h3></div>
       <ul
         class="hidden md:flex md:justify-between md:items-center md:gap-2 md:text-base text-dark-blue"
         :class="[
