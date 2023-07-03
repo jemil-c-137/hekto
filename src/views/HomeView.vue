@@ -1,6 +1,42 @@
 <template>
   <main>
-    <HeroSection />
+    <section class="bg-light">
+      <swiper-container
+        :style="{
+          '--swiper-pagination-color': '#FB2E86',
+          '--swiper-pagination-bullet-inactive-opacity': '1',
+          '--swiper-pagination-bullet-inactive-color': '#E0D3F5'
+        }"
+        :pagination="true"
+      >
+        <swiper-slide>
+          <HeroSection
+            :imageUrl="PinkSofaImage"
+            name="New Furniture Collection in 2023"
+            leading-text="Best Furniture For Your Castle...."
+            subtext="Immerse yourself in a world of luxury and sophistication as you explore our carefully curated pieces"
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <HeroSection
+            :reverse="true"
+            :imageUrl="BlueSofaImage"
+            name="Introducing the Exquisite Home Décor Line"
+            leading-text="Discover the Finest Furniture Collection for Your Grand Estate!"
+            subtext="Crafted with meticulous attention to detail, each piece in our collection showcases exquisite craftsmanship and exceptional quality"
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <HeroSection
+            :imageUrl="GraySofa"
+            name="Innovation Meets Comfort"
+            leading-text="Transform Your Estate's Interior with Timeless Furniture Selections!"
+            subtext="Indulge in unrivaled luxury and create an ambiance of grandeur in your stately manor with our exclusive furniture collection"
+          />
+        </swiper-slide>
+      </swiper-container>
+    </section>
+
     <section class="content-container pt-12 pb-36">
       <h3 class="section-title mb-12">Featured Products</h3>
       <div
@@ -86,7 +122,7 @@
         <div
           class="grid grid-cols-1 md:grid-cols-2 items-center justify-center flex-col md:flex-row"
         >
-          <img class="mx-auto my-0 max-w-full h-auto" src="../assets/b-sofe.png" alt="" />
+          <img class="mx-auto my-0 max-w-full h-auto" :src="BlueSofaImage" alt="" />
           <div class="w-full">
             <h5 class="product-title mb-7">Unique Features Of leatest & Trending Poducts</h5>
             <BulletList :items="productList" class="mb-8" />
@@ -252,6 +288,9 @@ import BulletList from '../components/UI/BulletList.vue'
 import TrendingProduct from '../components/ProductCards/TrendingProduct.vue'
 import TopCategories from '../components/ProductCards/TopCategories.vue'
 import BlogpostCard from '../components/Blogpost/BlogpostCard.vue'
+import PinkSofaImage from '../assets/sofa.png'
+import BlueSofaImage from '../assets/b-sofe.png'
+import GraySofa from '../assets/gray-sofa.png'
 
 const productsData = [
   {
