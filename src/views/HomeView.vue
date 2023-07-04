@@ -52,7 +52,42 @@
         />
       </div>
 
-      <h3 class="section-title mb-12">Latest Products</h3>
+      <h3 class="section-title mb-3">Latest Products</h3>
+
+      <div class="flex justify-center gap-3 mb-14">
+        <span
+          :class="[
+            activeLatestProducts === LatestProductsOptions.NewArrival && 'text-pink underline'
+          ]"
+          @click="setActiveLatestProduct(LatestProductsOptions.NewArrival)"
+          class="cursor-pointer text-lg hover:underline hover:text-pink transition-colors"
+          >New Arrival</span
+        >
+        <span
+          :class="[
+            activeLatestProducts === LatestProductsOptions.BestSeller && 'text-pink underline'
+          ]"
+          @click="setActiveLatestProduct(LatestProductsOptions.BestSeller)"
+          class="cursor-pointer text-lg hover:underline hover:text-pink transition-colors"
+          >Best Seller</span
+        >
+        <span
+          :class="[
+            activeLatestProducts === LatestProductsOptions.Featured && 'text-pink underline'
+          ]"
+          @click="setActiveLatestProduct(LatestProductsOptions.Featured)"
+          class="cursor-pointer text-lg hover:underline hover:text-pink transition-colors"
+          >Featured</span
+        >
+        <span
+          :class="[
+            activeLatestProducts === LatestProductsOptions.SpecialOffer && 'text-pink underline'
+          ]"
+          @click="setActiveLatestProduct(LatestProductsOptions.SpecialOffer)"
+          class="cursor-pointer text-lg hover:underline hover:text-pink transition-colors"
+          >Special Offer</span
+        >
+      </div>
 
       <div
         class="mb-32 grid gap-y-6 gap-x-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center"
@@ -238,20 +273,61 @@
           </div>
         </div>
       </div>
-      <div class="mb-32">
-        <h5 class="section-title mb-32">Top Categories</h5>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-          <TopCategories
-            v-for="topCategory in topCategories"
-            :key="topCategory.id"
-            :name="topCategory.name"
-            :price="topCategory.price"
-            :image-url="topCategory.imageUrl"
-          />
-        </div>
-      </div>
     </section>
+    <section class="content-container">
+      <swiper-container
+        :style="{
+          '--swiper-pagination-color': '#FB2E86',
+          '--swiper-pagination-bullet-inactive-opacity': '1',
+          '--swiper-pagination-bullet-inactive-color': '#E0D3F5'
+        }"
+        :pagination="true"
+      >
+        <swiper-slide>
+          <div class="pt-8 mb-32">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+              <TopCategories
+                v-for="topCategory in topCategories[0]"
+                :key="topCategory.id"
+                :name="topCategory.name"
+                :price="topCategory.price"
+                :image-url="topCategory.imageUrl"
+              />
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="pb-4 mb-32">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+              <TopCategories
+                v-for="topCategory in topCategories[1]"
+                :key="topCategory.id"
+                :name="topCategory.name"
+                :price="topCategory.price"
+                :image-url="topCategory.imageUrl"
+              />
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="mb-32">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+              <TopCategories
+                v-for="topCategory in topCategories[2]"
+                :key="topCategory.id"
+                :name="topCategory.name"
+                :price="topCategory.price"
+                :image-url="topCategory.imageUrl"
+              />
+            </div>
+          </div>
+        </swiper-slide>
+      </swiper-container>
+    </section>
+    <h5 class="section-title mb-32">Top Categories</h5>
+
     <section class="pt-56 pb-32 text-center bg-[url('src/assets/bg-palm.jpg')] bg-no-repeat">
       <h3 class="mb-7 section-title">Get Leatest Update By Subscribe 0ur Newslater</h3>
       <button class="button">Show Now</button>
@@ -275,8 +351,6 @@
 </template>
 
 <script setup lang="ts">
-import PenIcon from '../components/svg/logos/PenIcon.vue'
-import CalendarIcon from '../components/svg/logos/CalendarIcon.vue'
 import HeroSection from '../components/HeroSection.vue'
 import FeaturedProductCard from '../components/ProductCards/FeaturedProductCard.vue'
 import LatestProducts from '../components/ProductCards/LatestProducts.vue'
@@ -291,6 +365,10 @@ import BlogpostCard from '../components/Blogpost/BlogpostCard.vue'
 import PinkSofaImage from '../assets/sofa.png'
 import BlueSofaImage from '../assets/b-sofe.png'
 import GraySofa from '../assets/gray-sofa.png'
+import { LatestProductsOptions } from '@/types'
+import { ref } from 'vue'
+
+const activeLatestProducts = ref<LatestProductsOptions>(LatestProductsOptions.NewArrival)
 
 const productsData = [
   {
@@ -395,10 +473,64 @@ const trendingProducts = [
 ]
 
 const topCategories = [
-  { name: 'Mini LCW Chair', price: '$56.00', imageUrl: 'src/assets/chair5.png', id: 1 },
-  { name: 'Mini LCW Chair', price: '$56.00', imageUrl: 'src/assets/chair3.png', id: 2 },
-  { name: 'Mini LCW Chair', price: '$56.00', imageUrl: 'src/assets/chair4.png', id: 3 },
-  { name: 'Mini LCW Chair', price: '$56.00', imageUrl: 'src/assets/chair2.png', id: 4 }
+  [
+    { name: 'Mini LCW Chair', price: '$56.00', imageUrl: 'src/assets/chair5.png', id: 1 },
+    { name: 'Mini LCW Chair', price: '$56.00', imageUrl: 'src/assets/chair3.png', id: 2 },
+    { name: 'Mini LCW Chair', price: '$56.00', imageUrl: 'src/assets/chair4.png', id: 3 },
+    { name: 'Mini LCW Chair', price: '$56.00', imageUrl: 'src/assets/chair2.png', id: 4 }
+  ],
+  [
+    {
+      name: 'Cantilever chair',
+      price: '$26.00',
+      imageUrl: 'src/assets/trending/gray-chair.png',
+      id: 1
+    },
+    {
+      name: 'Cantilever chair',
+      price: '$26.00',
+      imageUrl: 'src/assets/trending/white-chair.png',
+      id: 4
+    },
+    {
+      name: 'Cantilever chair',
+      price: '$26.00',
+      imageUrl: 'src/assets/trending/black-chair.png',
+      id: 2
+    },
+    {
+      name: 'Cantilever chair',
+      price: '$26.00',
+      imageUrl: 'src/assets/trending/red-chair.png',
+      id: 3
+    }
+  ],
+  [
+    {
+      name: 'Comfort Handy Craft',
+      price: '$42.00',
+      imageUrl: 'src/assets/new-arrival/chair2.png',
+      id: 2
+    },
+    {
+      name: 'Comfort Handy Craft',
+      price: '$42.00',
+      imageUrl: 'src/assets/new-arrival/chair3.png',
+      id: 3
+    },
+    {
+      name: 'Comfort Handy Craft',
+      price: '$42.00',
+      imageUrl: 'src/assets/new-arrival/chair5.png',
+      id: 5
+    },
+    {
+      name: 'Comfort Handy Craft',
+      price: '$42.00',
+      imageUrl: 'src/assets/new-arrival/chair6.png',
+      id: 6
+    }
+  ]
 ]
 
 const productList = [
@@ -427,4 +559,8 @@ const blogposts = [
     id: 3
   }
 ]
+
+const setActiveLatestProduct = (value: LatestProductsOptions) => {
+  activeLatestProducts.value = value
+}
 </script>
