@@ -93,7 +93,7 @@
         class="mb-32 grid gap-y-6 gap-x-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center"
       >
         <LatestProducts
-          v-for="product in latestProductsData"
+          v-for="product in latestProducts"
           :key="product.id"
           :name="product.name"
           :price="product.price"
@@ -366,9 +366,29 @@ import PinkSofaImage from '../assets/sofa.png'
 import BlueSofaImage from '../assets/b-sofe.png'
 import GraySofa from '../assets/gray-sofa.png'
 import { LatestProductsOptions } from '@/types'
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 const activeLatestProducts = ref<LatestProductsOptions>(LatestProductsOptions.NewArrival)
+
+const latestProducts = computed(() => {
+  let data: { id: number; name: string; imageUrl: string; price: string; oldPrice?: string }[]
+  switch (activeLatestProducts.value) {
+    case LatestProductsOptions.NewArrival:
+      data = latestProductsData
+      break
+    case LatestProductsOptions.BestSeller:
+      data = trendingProducts
+      break
+    case LatestProductsOptions.Featured:
+      data = productsData
+      break
+    case LatestProductsOptions.SpecialOffer:
+      data = latestProductsData
+      break
+  }
+
+  return data
+})
 
 const productsData = [
   {
