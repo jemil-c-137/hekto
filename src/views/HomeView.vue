@@ -7,7 +7,9 @@
           '--swiper-pagination-bullet-inactive-opacity': '1',
           '--swiper-pagination-bullet-inactive-color': '#E0D3F5'
         }"
-        :pagination="true"
+        :pagination="{
+          clickable: true
+        }"
       >
         <swiper-slide>
           <HeroSection
@@ -281,7 +283,9 @@
           '--swiper-pagination-bullet-inactive-opacity': '1',
           '--swiper-pagination-bullet-inactive-color': '#E0D3F5'
         }"
-        :pagination="true"
+        :pagination="{
+          clickable: true
+        }"
       >
         <swiper-slide>
           <div class="pt-8 mb-32">
