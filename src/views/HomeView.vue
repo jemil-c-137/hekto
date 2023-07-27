@@ -370,7 +370,8 @@ import PinkSofaImage from '../assets/sofa.png'
 import BlueSofaImage from '../assets/b-sofe.png'
 import GraySofa from '../assets/gray-sofa.png'
 import { LatestProductsOptions } from '@/types'
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
+import Api from '../api'
 
 const activeLatestProducts = ref<LatestProductsOptions>(LatestProductsOptions.NewArrival)
 
@@ -587,4 +588,9 @@ const blogposts = [
 const setActiveLatestProduct = (value: LatestProductsOptions) => {
   activeLatestProducts.value = value
 }
+
+onMounted(async () => {
+  const a = await Api.getAllProducts();
+  console.log('a', a)
+})
 </script>

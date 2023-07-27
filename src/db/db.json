@@ -1,0 +1,186 @@
+{
+  "productsData": [
+    {
+      "name": "Cantiliver chair",
+      "price": "$42.00",
+      "code": "Code - Y532203",
+      "imageUrl": "src/assets/chair2.png",
+      "id": 2
+    },
+    {
+      "name": "Cantiliver chair",
+      "price": "$42.00",
+      "code": "Code - Y532203",
+      "imageUrl": "src/assets/chair1.png",
+      "id": 1
+    },
+    {
+      "name": "Cantiliver chair",
+      "price": "$42.00",
+      "code": "Code - Y532203",
+      "imageUrl": "src/assets/chair3.png",
+      "id": 3
+    },
+    {
+      "name": "Cantiliver chair",
+      "price": "$42.00",
+      "code": "Code - Y532203",
+      "imageUrl": "src/assets/chair4.png",
+      "id": 4
+    }
+  ],
+  "latestProductsData": [
+    {
+      "name": "Comfort Handy Craft",
+      "price": "$42.00",
+      "oldPrice": "$65.00",
+      "imageUrl": "src/assets/new-arrival/chair1.png",
+      "id": 1
+    },
+    {
+      "name": "Comfort Handy Craft",
+      "price": "$42.00",
+      "imageUrl": "src/assets/new-arrival/chair2.png",
+      "id": 2
+    },
+    {
+      "name": "Comfort Handy Craft",
+      "price": "$42.00",
+      "imageUrl": "src/assets/new-arrival/chair3.png",
+      "id": 3
+    },
+    {
+      "name": "Comfort Handy Craft",
+      "price": "$42.00",
+      "imageUrl": "src/assets/new-arrival/chair4.png",
+      "id": 4
+    },
+    {
+      "name": "Comfort Handy Craft",
+      "price": "$42.00",
+      "imageUrl": "src/assets/new-arrival/chair5.png",
+      "id": 5
+    },
+    {
+      "name": "Comfort Handy Craft",
+      "price": "$42.00",
+      "imageUrl": "src/assets/new-arrival/chair6.png",
+      "id": 6
+    }
+  ],
+  "trendingProducts": [
+    {
+      "name": "Cantilever chair",
+      "price": "$26.00",
+      "oldPrice": "$42.00",
+      "imageUrl": "src/assets/trending/gray-chair.png",
+      "id": 1
+    },
+    {
+      "name": "Cantilever chair",
+      "price": "$26.00",
+      "oldPrice": "$42.00",
+      "imageUrl": "src/assets/trending/white-chair.png",
+      "id": 4
+    },
+    {
+      "name": "Cantilever chair",
+      "price": "$26.00",
+      "oldPrice": "$42.00",
+      "imageUrl": "src/assets/trending/black-chair.png",
+      "id": 2
+    },
+    {
+      "name": "Cantilever chair",
+      "price": "$26.00",
+      "oldPrice": "$42.00",
+      "imageUrl": "src/assets/trending/red-chair.png",
+      "id": 3
+    }
+  ],
+  "topCategories": [
+    [
+      { "name": "Mini LCW Chair", "price": "$56.00", "imageUrl": "src/assets/chair5.png", "id": 1 },
+      { "name": "Mini LCW Chair", "price": "$56.00", "imageUrl": "src/assets/chair3.png", "id": 2 },
+      { "name": "Mini LCW Chair", "price": "$56.00", "imageUrl": "src/assets/chair4.png", "id": 3 },
+      { "name": "Mini LCW Chair", "price": "$56.00", "imageUrl": "src/assets/chair2.png", "id": 4 }
+    ],
+    [
+      {
+        "name": "Cantilever chair",
+        "price": "$26.00",
+        "imageUrl": "src/assets/trending/gray-chair.png",
+        "id": 1
+      },
+      {
+        "name": "Cantilever chair",
+        "price": "$26.00",
+        "imageUrl": "src/assets/trending/white-chair.png",
+        "id": 4
+      },
+      {
+        "name": "Cantilever chair",
+        "price": "$26.00",
+        "imageUrl": "src/assets/trending/black-chair.png",
+        "id": 2
+      },
+      {
+        "name": "Cantilever chair",
+        "price": "$26.00",
+        "imageUrl": "src/assets/trending/red-chair.png",
+        "id": 3
+      }
+    ],
+    [
+      {
+        "name": "Comfort Handy Craft",
+        "price": "$42.00",
+        "imageUrl": "src/assets/new-arrival/chair2.png",
+        "id": 2
+      },
+      {
+        "name": "Comfort Handy Craft",
+        "price": "$42.00",
+        "imageUrl": "src/assets/new-arrival/chair3.png",
+        "id": 3
+      },
+      {
+        "name": "Comfort Handy Craft",
+        "price": "$42.00",
+        "imageUrl": "src/assets/new-arrival/chair5.png",
+        "id": 5
+      },
+      {
+        "name": "Comfort Handy Craft",
+        "price": "$42.00",
+        "imageUrl": "src/assets/new-arrival/chair6.png",
+        "id": 6
+      }
+    ]
+  ],
+  "productList": [
+    "All frames constructed with hardwood solids and laminates",
+    "Reinforced with double wood dowels, glue, screw - nails corner blocks and machine nails",
+    "Arms, backs and seats are structurally reinforced"
+  ],
+  "blogposts": [
+    {
+      "title": "Top esssential Trends in 2021",
+      "subtext": "More off this less hello samlande lied much over tightly circa horse taped mightly",
+      "imageUrl": "src/assets/office.jpg",
+      "id": 1
+    },
+    {
+      "title": "Top esssential Trends in 2021",
+      "subtext": "More off this less hello samlande lied much over tightly circa horse taped mightly",
+      "imageUrl": "src/assets/hall.jpg",
+      "id": 2
+    },
+    {
+      "title": "Top esssential Trends in 2021",
+      "subtext": "More off this less hello samlande lied much over tightly circa horse taped mightly",
+      "imageUrl": "src/assets/living-room.jpg",
+      "id": 3
+    }
+  ]
+}
