@@ -1,12 +1,16 @@
 import data from '../db/db.json'
+import { IAllProductsResponse } from '@/types'
 
 class Api {
   static async getAllProducts() {
-    return new Promise((resolve, reject) => {
+    return new Promise<IAllProductsResponse>((resolve, reject) => {
       const isSuccess = data !== undefined
 
       setTimeout(() => {
         if (isSuccess) {
+          const repsonse = {
+            productsData: data.productsData
+          }
           resolve(data) // Yay! Everything went well!
         } else {
           reject(new Error('Something went wrong!')) // Oops! Something went wrong!

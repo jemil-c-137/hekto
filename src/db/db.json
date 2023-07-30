@@ -5,130 +5,185 @@
       "price": "$42.00",
       "code": "Code - Y532203",
       "imageUrl": "src/assets/chair2.png",
-      "id": 2
+      "id": 2,
+      "discountedPrice": null
     },
     {
       "name": "Cantiliver chair",
       "price": "$42.00",
       "code": "Code - Y532203",
       "imageUrl": "src/assets/chair1.png",
-      "id": 1
+      "id": 1,
+      "discountedPrice": null
     },
     {
       "name": "Cantiliver chair",
       "price": "$42.00",
       "code": "Code - Y532203",
       "imageUrl": "src/assets/chair3.png",
-      "id": 3
+      "id": 3,
+      "discountedPrice": null
     },
     {
       "name": "Cantiliver chair",
       "price": "$42.00",
       "code": "Code - Y532203",
       "imageUrl": "src/assets/chair4.png",
-      "id": 4
+      "id": 4,
+      "discountedPrice": null
     }
   ],
   "latestProductsData": [
     {
       "name": "Comfort Handy Craft",
+      "code": null,
       "price": "$42.00",
-      "oldPrice": "$65.00",
+      "discountedPrice": "$65.00",
       "imageUrl": "src/assets/new-arrival/chair1.png",
       "id": 1
     },
     {
       "name": "Comfort Handy Craft",
+      "code": null,
       "price": "$42.00",
       "imageUrl": "src/assets/new-arrival/chair2.png",
-      "id": 2
+      "id": 2,
+      "discountedPrice": null
     },
     {
       "name": "Comfort Handy Craft",
+      "code": null,
       "price": "$42.00",
       "imageUrl": "src/assets/new-arrival/chair3.png",
-      "id": 3
+      "id": 3,
+      "discountedPrice": "$65.00"
     },
     {
       "name": "Comfort Handy Craft",
+      "code": null,
       "price": "$42.00",
       "imageUrl": "src/assets/new-arrival/chair4.png",
-      "id": 4
+      "id": 4,
+      "discountedPrice": null
     },
     {
       "name": "Comfort Handy Craft",
+      "code": null,
       "price": "$42.00",
       "imageUrl": "src/assets/new-arrival/chair5.png",
-      "id": 5
+      "id": 5,
+      "discountedPrice": "$65.00"
     },
     {
       "name": "Comfort Handy Craft",
+      "code": null,
       "price": "$42.00",
       "imageUrl": "src/assets/new-arrival/chair6.png",
-      "id": 6
+      "id": 6,
+      "discountedPrice": null
     }
   ],
   "trendingProducts": [
     {
       "name": "Cantilever chair",
       "price": "$26.00",
-      "oldPrice": "$42.00",
+      "discountedPrice": "$42.00",
       "imageUrl": "src/assets/trending/gray-chair.png",
-      "id": 1
+      "id": 1,
+      "code": null
     },
     {
       "name": "Cantilever chair",
       "price": "$26.00",
-      "oldPrice": "$42.00",
+      "discountedPrice": "$42.00",
       "imageUrl": "src/assets/trending/white-chair.png",
-      "id": 4
+      "id": 4,
+      "code": null
     },
     {
       "name": "Cantilever chair",
       "price": "$26.00",
-      "oldPrice": "$42.00",
+      "discountedPrice": "$42.00",
       "imageUrl": "src/assets/trending/black-chair.png",
-      "id": 2
+      "id": 2,
+      "code": null
     },
     {
       "name": "Cantilever chair",
       "price": "$26.00",
-      "oldPrice": "$42.00",
+      "discountedPrice": "$42.00",
       "imageUrl": "src/assets/trending/red-chair.png",
-      "id": 3
+      "id": 3,
+      "code": null
     }
   ],
   "topCategories": [
     [
-      { "name": "Mini LCW Chair", "price": "$56.00", "imageUrl": "src/assets/chair5.png", "id": 1 },
-      { "name": "Mini LCW Chair", "price": "$56.00", "imageUrl": "src/assets/chair3.png", "id": 2 },
-      { "name": "Mini LCW Chair", "price": "$56.00", "imageUrl": "src/assets/chair4.png", "id": 3 },
-      { "name": "Mini LCW Chair", "price": "$56.00", "imageUrl": "src/assets/chair2.png", "id": 4 }
+      {
+        "name": "Mini LCW Chair",
+        "price": "$56.00",
+        "imageUrl": "src/assets/chair5.png",
+        "code": null,
+        "id": 1,
+        "discountedPrice": null
+      },
+      {
+        "name": "Mini LCW Chair",
+        "price": "$56.00",
+        "imageUrl": "src/assets/chair3.png",
+        "code": null,
+        "id": 2,
+        "discountedPrice": null
+      },
+      {
+        "name": "Mini LCW Chair",
+        "price": "$56.00",
+        "imageUrl": "src/assets/chair4.png",
+        "code": null,
+        "id": 3,
+        "discountedPrice": null
+      },
+      {
+        "name": "Mini LCW Chair",
+        "price": "$56.00",
+        "imageUrl": "src/assets/chair2.png",
+        "code": null,
+        "id": 4,
+        "discountedPrice": null
+      }
     ],
     [
       {
         "name": "Cantilever chair",
         "price": "$26.00",
         "imageUrl": "src/assets/trending/gray-chair.png",
-        "id": 1
+        "code": null,
+        "id": 1,
+        "discountedPrice": null
       },
       {
         "name": "Cantilever chair",
         "price": "$26.00",
         "imageUrl": "src/assets/trending/white-chair.png",
-        "id": 4
+        "code": null,
+        "id": 4,
+        "discountedPrice": null
       },
       {
         "name": "Cantilever chair",
         "price": "$26.00",
         "imageUrl": "src/assets/trending/black-chair.png",
-        "id": 2
+        "code": null,
+        "id": 2,
+        "discountedPrice": null
       },
       {
         "name": "Cantilever chair",
         "price": "$26.00",
         "imageUrl": "src/assets/trending/red-chair.png",
-        "id": 3
+        "code": null,
+        "id": 3,
+        "discountedPrice": null
       }
     ],
     [
@@ -136,25 +191,33 @@
         "name": "Comfort Handy Craft",
         "price": "$42.00",
         "imageUrl": "src/assets/new-arrival/chair2.png",
-        "id": 2
+        "code": null,
+        "id": 2,
+        "discountedPrice": null
       },
       {
         "name": "Comfort Handy Craft",
         "price": "$42.00",
         "imageUrl": "src/assets/new-arrival/chair3.png",
-        "id": 3
+        "code": null,
+        "id": 3,
+        "discountedPrice": null
       },
       {
         "name": "Comfort Handy Craft",
         "price": "$42.00",
         "imageUrl": "src/assets/new-arrival/chair5.png",
-        "id": 5
+        "code": null,
+        "id": 5,
+        "discountedPrice": null
       },
       {
         "name": "Comfort Handy Craft",
         "price": "$42.00",
         "imageUrl": "src/assets/new-arrival/chair6.png",
-        "id": 6
+        "code": null,
+        "id": 6,
+        "discountedPrice": null
       }
     ]
   ],
