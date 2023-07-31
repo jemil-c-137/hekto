@@ -47,7 +47,7 @@
         <FeaturedProductCard
           v-for="product in productsData"
           :key="product.id"
-          :productName="product.name"
+          :name="product.name"
           :price="product.price"
           :code="product.code"
           :imageUrl="product.imageUrl"
@@ -99,7 +99,7 @@
           :key="product.id"
           :name="product.name"
           :price="product.price"
-          :oldPrice="product.oldPrice"
+          :discounted-price="product.discountedPrice"
           :imgUrl="product.imageUrl"
         />
       </div>
@@ -162,7 +162,7 @@
           <img class="mx-auto my-0 max-w-full h-auto" :src="BlueSofaImage" alt="" />
           <div class="w-full">
             <h5 class="product-title mb-7">Unique Features Of leatest & Trending Poducts</h5>
-            <BulletList :items="productList" class="mb-8" />
+            <BulletList v-if="productList" :items="productList" class="mb-8" />
             <div class="flex flex-row items-center gap-8">
               <button class="button !px-6 !py-4 max-w-fit">Add to cart</button>
               <div class="font-josefin">
@@ -183,7 +183,7 @@
           :imageUrl="product.imageUrl"
           :price="product.price"
           :name="product.name"
-          :oldPrice="product.oldPrice"
+          :discounted-price="product.discountedPrice"
         />
       </div>
       <div
@@ -278,6 +278,7 @@
     </section>
     <section class="content-container">
       <swiper-container
+        v-if="topCategories"
         :style="{
           '--swiper-pagination-color': '#FB2E86',
           '--swiper-pagination-bullet-inactive-opacity': '1',
@@ -369,228 +370,49 @@ import BlogpostCard from '../components/Blogpost/BlogpostCard.vue'
 import PinkSofaImage from '../assets/sofa.png'
 import BlueSofaImage from '../assets/b-sofe.png'
 import GraySofa from '../assets/gray-sofa.png'
-import { LatestProductsOptions } from '@/types'
+import { IBlogPost, IProduct, LatestProductsOptions } from '@/types'
 import { ref, computed, onMounted } from 'vue'
 import Api from '../api'
 
 const activeLatestProducts = ref<LatestProductsOptions>(LatestProductsOptions.NewArrival)
 
-const latestProducts = computed(() => {
-  let data: { id: number; name: string; imageUrl: string; price: string; oldPrice?: string }[]
-  switch (activeLatestProducts.value) {
-    case LatestProductsOptions.NewArrival:
-      data = latestProductsData
-      break
-    case LatestProductsOptions.BestSeller:
-      data = trendingProducts
-      break
-    case LatestProductsOptions.Featured:
-      data = productsData
-      break
-    case LatestProductsOptions.SpecialOffer:
-      data = latestProductsData
-      break
-  }
+const productsData = ref<IProduct[] | null>(null)
+const latestProductsData = ref<IProduct[] | null>(null)
+const topCategories = ref<IProduct[][] | null>(null)
+const productList = ref<string[] | null>(null)
+const blogposts = ref<IBlogPost[] | null>(null)
+const trendingProducts = ref<IProduct[] | null>(null)
 
-  return data
+onMounted(async () => {
+  const data = await Api.getAllProducts()
+  productsData.value = data.productsData
+  latestProductsData.value = data.latestProductsData
+  topCategories.value = data.topCategories
+  productList.value = data.productList
+  blogposts.value = data.blogposts
+  trendingProducts.value = data.trendingProducts
 })
 
-const productsData = [
-  {
-    name: 'Cantiliver chair',
-    price: '$42.00',
-    code: 'Code - Y532203',
-    imageUrl: 'src/assets/chair2.png',
-    id: 2
-  },
-  {
-    name: 'Cantiliver chair',
-    price: '$42.00',
-    code: 'Code - Y532203',
-    imageUrl: 'src/assets/chair1.png',
-    id: 1
-  },
-  {
-    name: 'Cantiliver chair',
-    price: '$42.00',
-    code: 'Code - Y532203',
-    imageUrl: 'src/assets/chair3.png',
-    id: 3
-  },
-  {
-    name: 'Cantiliver chair',
-    price: '$42.00',
-    code: 'Code - Y532203',
-    imageUrl: 'src/assets/chair4.png',
-    id: 4
+const latestProducts = computed(() => {
+  let data: IProduct[] | null
+  switch (activeLatestProducts.value) {
+    case LatestProductsOptions.NewArrival:
+      data = latestProductsData.value
+      break
+    case LatestProductsOptions.BestSeller:
+      data = trendingProducts.value
+      break
+    case LatestProductsOptions.Featured:
+      data = productsData.value
+      break
+    case LatestProductsOptions.SpecialOffer:
+      data = latestProductsData.value
+      break
   }
-]
-
-const latestProductsData = [
-  {
-    name: 'Comfort Handy Craft',
-    price: '$42.00',
-    oldPrice: '$65.00',
-    imageUrl: 'src/assets/new-arrival/chair1.png',
-    id: 1
-  },
-  {
-    name: 'Comfort Handy Craft',
-    price: '$42.00',
-    imageUrl: 'src/assets/new-arrival/chair2.png',
-    id: 2
-  },
-  {
-    name: 'Comfort Handy Craft',
-    price: '$42.00',
-    imageUrl: 'src/assets/new-arrival/chair3.png',
-    id: 3
-  },
-  {
-    name: 'Comfort Handy Craft',
-    price: '$42.00',
-    imageUrl: 'src/assets/new-arrival/chair4.png',
-    id: 4
-  },
-  {
-    name: 'Comfort Handy Craft',
-    price: '$42.00',
-    imageUrl: 'src/assets/new-arrival/chair5.png',
-    id: 5
-  },
-  {
-    name: 'Comfort Handy Craft',
-    price: '$42.00',
-    imageUrl: 'src/assets/new-arrival/chair6.png',
-    id: 6
-  }
-]
-
-const trendingProducts = [
-  {
-    name: 'Cantilever chair',
-    price: '$26.00',
-    oldPrice: '$42.00',
-    imageUrl: 'src/assets/trending/gray-chair.png',
-    id: 1
-  },
-  {
-    name: 'Cantilever chair',
-    price: '$26.00',
-    oldPrice: '$42.00',
-    imageUrl: 'src/assets/trending/white-chair.png',
-    id: 4
-  },
-  {
-    name: 'Cantilever chair',
-    price: '$26.00',
-    oldPrice: '$42.00',
-    imageUrl: 'src/assets/trending/black-chair.png',
-    id: 2
-  },
-  {
-    name: 'Cantilever chair',
-    price: '$26.00',
-    oldPrice: '$42.00',
-    imageUrl: 'src/assets/trending/red-chair.png',
-    id: 3
-  }
-]
-
-const topCategories = [
-  [
-    { name: 'Mini LCW Chair', price: '$56.00', imageUrl: 'src/assets/chair5.png', id: 1 },
-    { name: 'Mini LCW Chair', price: '$56.00', imageUrl: 'src/assets/chair3.png', id: 2 },
-    { name: 'Mini LCW Chair', price: '$56.00', imageUrl: 'src/assets/chair4.png', id: 3 },
-    { name: 'Mini LCW Chair', price: '$56.00', imageUrl: 'src/assets/chair2.png', id: 4 }
-  ],
-  [
-    {
-      name: 'Cantilever chair',
-      price: '$26.00',
-      imageUrl: 'src/assets/trending/gray-chair.png',
-      id: 1
-    },
-    {
-      name: 'Cantilever chair',
-      price: '$26.00',
-      imageUrl: 'src/assets/trending/white-chair.png',
-      id: 4
-    },
-    {
-      name: 'Cantilever chair',
-      price: '$26.00',
-      imageUrl: 'src/assets/trending/black-chair.png',
-      id: 2
-    },
-    {
-      name: 'Cantilever chair',
-      price: '$26.00',
-      imageUrl: 'src/assets/trending/red-chair.png',
-      id: 3
-    }
-  ],
-  [
-    {
-      name: 'Comfort Handy Craft',
-      price: '$42.00',
-      imageUrl: 'src/assets/new-arrival/chair2.png',
-      id: 2
-    },
-    {
-      name: 'Comfort Handy Craft',
-      price: '$42.00',
-      imageUrl: 'src/assets/new-arrival/chair3.png',
-      id: 3
-    },
-    {
-      name: 'Comfort Handy Craft',
-      price: '$42.00',
-      imageUrl: 'src/assets/new-arrival/chair5.png',
-      id: 5
-    },
-    {
-      name: 'Comfort Handy Craft',
-      price: '$42.00',
-      imageUrl: 'src/assets/new-arrival/chair6.png',
-      id: 6
-    }
-  ]
-]
-
-const productList = [
-  'All frames constructed with hardwood solids and laminates',
-  'Reinforced with double wood dowels, glue, screw - nails corner blocks and machine nails',
-  'Arms, backs and seats are structurally reinforced'
-]
-
-const blogposts = [
-  {
-    title: 'Top esssential Trends in 2021',
-    subtext: 'More off this less hello samlande lied much over tightly circa horse taped mightly',
-    imageUrl: 'src/assets/office.jpg',
-    id: 1
-  },
-  {
-    title: 'Top esssential Trends in 2021',
-    subtext: 'More off this less hello samlande lied much over tightly circa horse taped mightly',
-    imageUrl: 'src/assets/hall.jpg',
-    id: 2
-  },
-  {
-    title: 'Top esssential Trends in 2021',
-    subtext: 'More off this less hello samlande lied much over tightly circa horse taped mightly',
-    imageUrl: 'src/assets/living-room.jpg',
-    id: 3
-  }
-]
+  return data
+})
 
 const setActiveLatestProduct = (value: LatestProductsOptions) => {
   activeLatestProducts.value = value
 }
-
-onMounted(async () => {
-  const a = await Api.getAllProducts();
-  console.log('a', a)
-})
 </script>

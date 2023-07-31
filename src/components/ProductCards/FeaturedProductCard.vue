@@ -12,7 +12,7 @@
       </button>
     </div>
     <div class="pt-4 bg-white text-center group-hover:bg-blue transition-colors">
-      <p class="group-hover:text-white text-lg text-pink font-bold mb-3">{{ productName }}</p>
+      <p class="group-hover:text-white text-lg text-pink font-bold mb-3">{{ name }}</p>
       <div class="flex justify-center mb-3">
         <div class="flex justify-center gap-x-2 group-hover:bg-white w-fit px-2 py-1">
           <span class="block w-8 h-2 bg-mint rounded"></span>
@@ -30,9 +30,9 @@
 import CardActions from './CardActions.vue'
 
 defineProps<{
-  productName: string
+  name: string
   price: string
-  code: string
+  code: string | null
   imageUrl: string
 }>()
 </script>

@@ -4,7 +4,7 @@
       class="relative h-[260px] bg-light-gray group-hover:bg-white transition-colors flex justify-center items-center mb-4 rounded"
     >
       <img :src="imgUrl" alt="" />
-      <SaleBadge v-if="oldPrice" class="absolute left-5 top-5" />
+      <SaleBadge v-if="discountedPrice" class="absolute left-5 top-5" />
       <CardActions placement="bottom-left" :vertical="true" />
     </div>
     <div class="font-josefin flex justify-between">
@@ -14,8 +14,10 @@
         {{ name }}
       </p>
       <div class="pr-4">
-        <span class="text-navy-blue text-sm mr-2">{{ price }}</span>
-        <span v-if="oldPrice" class="text-red text-sm line-through">{{ oldPrice }}</span>
+        <span class="text-navy-blue text-sm mr-2">{{
+          discountedPrice ? discountedPrice : price
+        }}</span>
+        <span v-if="discountedPrice" class="text-red text-sm line-through">{{ price }}</span>
       </div>
     </div>
   </div>
@@ -29,6 +31,6 @@ defineProps<{
   name: string
   price: string
   imgUrl: string
-  oldPrice?: string
+  discountedPrice: string | null
 }>()
 </script>

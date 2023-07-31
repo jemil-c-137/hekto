@@ -8,9 +8,6 @@ class Api {
 
       setTimeout(() => {
         if (isSuccess) {
-          const repsonse = {
-            productsData: data.productsData
-          }
           resolve(data) // Yay! Everything went well!
         } else {
           reject(new Error('Something went wrong!')) // Oops! Something went wrong!

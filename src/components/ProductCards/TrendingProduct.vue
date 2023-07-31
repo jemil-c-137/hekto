@@ -10,11 +10,11 @@
     </div>
     <div class="text-center mb-5 group-hover:text-white">
       <p>{{ name }}</p>
-      <span class="font-josefin mr-3">{{ price }}</span>
+      <span class="font-josefin mr-3">{{ discountedPrice ? discountedPrice : price }}</span>
       <span
-        v-if="oldPrice"
+        v-if="discountedPrice"
         class="font-josefin line-through opacity-30 text-sm group-hover:text-purple-white group-hover:opacity-100"
-        >{{ oldPrice }}</span
+        >{{ price }}</span
       >
     </div>
   </div>
@@ -27,6 +27,6 @@ defineProps<{
   name: string
   imageUrl: string
   price: string
-  oldPrice?: string
+  discountedPrice: string | null
 }>()
 </script>
