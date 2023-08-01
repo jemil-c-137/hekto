@@ -5,11 +5,16 @@
     >
       <CardActions />
       <img :src="imageUrl" alt="" />
-      <button
-        class="hidden group-hover:block absolute bottom-4 hover:bg-blue active:bg-dark-navy transition-colors rounded bg-green py-2 px-4 text-white font-josefin"
+      <RouterLink
+        class="hidden group-hover:block absolute bottom-4"
+        :to="{ name: 'product-details', params: { id: `${id}` } }"
       >
-        View Details
-      </button>
+        <button
+          class="hover:bg-blue active:bg-dark-navy transition-colors rounded bg-green py-2 px-4 text-white font-josefin"
+        >
+          View Details
+        </button>
+      </RouterLink>
     </div>
     <div class="pt-4 bg-white text-center group-hover:bg-blue transition-colors">
       <p class="group-hover:text-white text-lg text-pink font-bold mb-3">{{ name }}</p>
@@ -34,5 +39,6 @@ defineProps<{
   price: string
   code: string | null
   imageUrl: string
+  id: number
 }>()
 </script>

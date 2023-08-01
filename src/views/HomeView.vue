@@ -46,6 +46,7 @@
       >
         <FeaturedProductCard
           v-for="product in productsData"
+          :id="product.id"
           :key="product.id"
           :name="product.name"
           :price="product.price"
@@ -383,14 +384,20 @@ const productList = ref<string[] | null>(null)
 const blogposts = ref<IBlogPost[] | null>(null)
 const trendingProducts = ref<IProduct[] | null>(null)
 
-onMounted(async () => {
-  const data = await Api.getAllProducts()
-  productsData.value = data.productsData
-  latestProductsData.value = data.latestProductsData
-  topCategories.value = data.topCategories
-  productList.value = data.productList
-  blogposts.value = data.blogposts
-  trendingProducts.value = data.trendingProducts
+onMounted(() => {
+  Api.getAllProducts()
+    .then((res) => {
+      const data = res
+      productsData.value = data.productsData
+      latestProductsData.value = data.latestProductsData
+      topCategories.value = data.topCategories
+      productList.value = data.productList
+      blogposts.value = data.blogposts
+      trendingProducts.value = data.trendingProducts
+    })
+    .catch(() => {
+      console.log('error while fetching data')
+    })
 })
 
 const latestProducts = computed(() => {
