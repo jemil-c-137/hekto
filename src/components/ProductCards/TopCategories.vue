@@ -4,11 +4,12 @@
       class="relative w-full h-[270px] bg-purple-white rounded-full flex justify-center items-center shadow-md group-hover:shadow-purple group-hover:shadow-2xl mb-10"
     >
       <img :src="imageUrl" alt="" />
-      <button
-        class="hidden group-hover:block absolute bottom-4 hover:bg-blue active:bg-dark-navy transition-colors rounded bg-green py-2 px-4 text-white font-josefin"
+      <RouterLink
+        class="hidden group-hover:block absolute bottom-4"
+        :to="{ name: 'product-details', params: { id: `${id}` } }"
       >
-        View Details
-      </button>
+        <button class="view-details">View Details</button>
+      </RouterLink>
     </div>
     <p class="font-josefin text-xl">{{ name }}</p>
     <p class="font-josefin">{{ price }}</p>
@@ -16,5 +17,5 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{ name: string; price: string; imageUrl: string }>()
+defineProps<{ name: string; price: string; imageUrl: string; id: number }>()
 </script>

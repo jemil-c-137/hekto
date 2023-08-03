@@ -40,14 +40,14 @@
       "price": "$42.00",
       "discountedPrice": "$65.00",
       "imageUrl": "src/assets/new-arrival/chair1.png",
-      "id": 1
+      "id": 5
     },
     {
       "name": "Comfort Handy Craft",
       "code": null,
       "price": "$42.00",
       "imageUrl": "src/assets/new-arrival/chair2.png",
-      "id": 2,
+      "id": 6,
       "discountedPrice": null
     },
     {
@@ -55,7 +55,7 @@
       "code": null,
       "price": "$42.00",
       "imageUrl": "src/assets/new-arrival/chair3.png",
-      "id": 3,
+      "id": 7,
       "discountedPrice": "$65.00"
     },
     {
@@ -63,7 +63,7 @@
       "code": null,
       "price": "$42.00",
       "imageUrl": "src/assets/new-arrival/chair4.png",
-      "id": 4,
+      "id": 7,
       "discountedPrice": null
     },
     {
@@ -71,7 +71,7 @@
       "code": null,
       "price": "$42.00",
       "imageUrl": "src/assets/new-arrival/chair5.png",
-      "id": 5,
+      "id": 8,
       "discountedPrice": "$65.00"
     },
     {
@@ -79,7 +79,7 @@
       "code": null,
       "price": "$42.00",
       "imageUrl": "src/assets/new-arrival/chair6.png",
-      "id": 6,
+      "id": 9,
       "discountedPrice": null
     }
   ],
@@ -89,7 +89,7 @@
       "price": "$26.00",
       "discountedPrice": "$42.00",
       "imageUrl": "src/assets/trending/gray-chair.png",
-      "id": 1,
+      "id": 10,
       "code": null
     },
     {
@@ -97,7 +97,7 @@
       "price": "$26.00",
       "discountedPrice": "$42.00",
       "imageUrl": "src/assets/trending/white-chair.png",
-      "id": 4,
+      "id": 11,
       "code": null
     },
     {
@@ -105,7 +105,7 @@
       "price": "$26.00",
       "discountedPrice": "$42.00",
       "imageUrl": "src/assets/trending/black-chair.png",
-      "id": 2,
+      "id": 12,
       "code": null
     },
     {
@@ -113,7 +113,7 @@
       "price": "$26.00",
       "discountedPrice": "$42.00",
       "imageUrl": "src/assets/trending/red-chair.png",
-      "id": 3,
+      "id": 13,
       "code": null
     }
   ],
@@ -124,7 +124,7 @@
         "price": "$56.00",
         "imageUrl": "src/assets/chair5.png",
         "code": null,
-        "id": 1,
+        "id": 14,
         "discountedPrice": null
       },
       {
@@ -132,7 +132,7 @@
         "price": "$56.00",
         "imageUrl": "src/assets/chair3.png",
         "code": null,
-        "id": 2,
+        "id": 15,
         "discountedPrice": null
       },
       {
@@ -140,7 +140,7 @@
         "price": "$56.00",
         "imageUrl": "src/assets/chair4.png",
         "code": null,
-        "id": 3,
+        "id": 16,
         "discountedPrice": null
       },
       {
@@ -148,7 +148,7 @@
         "price": "$56.00",
         "imageUrl": "src/assets/chair2.png",
         "code": null,
-        "id": 4,
+        "id": 17,
         "discountedPrice": null
       }
     ],
@@ -158,7 +158,7 @@
         "price": "$26.00",
         "imageUrl": "src/assets/trending/gray-chair.png",
         "code": null,
-        "id": 1,
+        "id": 18,
         "discountedPrice": null
       },
       {
@@ -166,7 +166,7 @@
         "price": "$26.00",
         "imageUrl": "src/assets/trending/white-chair.png",
         "code": null,
-        "id": 4,
+        "id": 19,
         "discountedPrice": null
       },
       {
@@ -174,7 +174,7 @@
         "price": "$26.00",
         "imageUrl": "src/assets/trending/black-chair.png",
         "code": null,
-        "id": 2,
+        "id": 20,
         "discountedPrice": null
       },
       {
@@ -182,7 +182,7 @@
         "price": "$26.00",
         "imageUrl": "src/assets/trending/red-chair.png",
         "code": null,
-        "id": 3,
+        "id": 21,
         "discountedPrice": null
       }
     ],
@@ -192,7 +192,7 @@
         "price": "$42.00",
         "imageUrl": "src/assets/new-arrival/chair2.png",
         "code": null,
-        "id": 2,
+        "id": 22,
         "discountedPrice": null
       },
       {
@@ -200,7 +200,7 @@
         "price": "$42.00",
         "imageUrl": "src/assets/new-arrival/chair3.png",
         "code": null,
-        "id": 3,
+        "id": 23,
         "discountedPrice": null
       },
       {
@@ -208,7 +208,7 @@
         "price": "$42.00",
         "imageUrl": "src/assets/new-arrival/chair5.png",
         "code": null,
-        "id": 5,
+        "id": 25,
         "discountedPrice": null
       },
       {
@@ -216,7 +216,7 @@
         "price": "$42.00",
         "imageUrl": "src/assets/new-arrival/chair6.png",
         "code": null,
-        "id": 6,
+        "id": 26,
         "discountedPrice": null
       }
     ]
@@ -231,19 +231,19 @@
       "title": "Top esssential Trends in 2021",
       "subtext": "More off this less hello samlande lied much over tightly circa horse taped mightly",
       "imageUrl": "src/assets/office.jpg",
-      "id": 1
+      "id": "link-1"
     },
     {
       "title": "Top esssential Trends in 2021",
       "subtext": "More off this less hello samlande lied much over tightly circa horse taped mightly",
       "imageUrl": "src/assets/hall.jpg",
-      "id": 2
+      "id": "link-2"
     },
     {
       "title": "Top esssential Trends in 2021",
       "subtext": "More off this less hello samlande lied much over tightly circa horse taped mightly",
       "imageUrl": "src/assets/living-room.jpg",
-      "id": 3
+      "id": "link-3"
     }
   ]
 }

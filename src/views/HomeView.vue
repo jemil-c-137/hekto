@@ -294,6 +294,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
               <TopCategories
                 v-for="topCategory in topCategories[0]"
+                :id="topCategory.id"
                 :key="topCategory.id"
                 :name="topCategory.name"
                 :price="topCategory.price"
@@ -308,6 +309,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
               <TopCategories
                 v-for="topCategory in topCategories[1]"
+                :id="topCategory.id"
                 :key="topCategory.id"
                 :name="topCategory.name"
                 :price="topCategory.price"
@@ -322,6 +324,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
               <TopCategories
                 v-for="topCategory in topCategories[2]"
+                :id="topCategory.id"
                 :key="topCategory.id"
                 :name="topCategory.name"
                 :price="topCategory.price"

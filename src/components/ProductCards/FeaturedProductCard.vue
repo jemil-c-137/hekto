@@ -9,11 +9,7 @@
         class="hidden group-hover:block absolute bottom-4"
         :to="{ name: 'product-details', params: { id: `${id}` } }"
       >
-        <button
-          class="hover:bg-blue active:bg-dark-navy transition-colors rounded bg-green py-2 px-4 text-white font-josefin"
-        >
-          View Details
-        </button>
+        <button class="view-details">View Details</button>
       </RouterLink>
     </div>
     <div class="pt-4 bg-white text-center group-hover:bg-blue transition-colors">

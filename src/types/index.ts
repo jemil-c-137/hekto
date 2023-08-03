@@ -18,7 +18,7 @@ export interface IBlogPost {
   title: string
   subtext: string
   imageUrl: string
-  id: number
+  slug: string
 }
 
 export interface IAllProductsResponse {
