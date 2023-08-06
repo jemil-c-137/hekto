@@ -98,6 +98,7 @@
         <LatestProducts
           v-for="product in latestProducts"
           :key="product.id"
+          :id="product.id"
           :name="product.name"
           :price="product.price"
           :discounted-price="product.discountedPrice"
@@ -181,6 +182,7 @@
         <TrendingProduct
           v-for="product in trendingProducts"
           :key="product.id"
+          :id="product.id"
           :imageUrl="product.imageUrl"
           :price="product.price"
           :name="product.name"
@@ -348,7 +350,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8">
           <BlogpostCard
             v-for="post in blogposts"
-            :key="post.id"
+            :key="post.slug"
             :imageUrl="post.imageUrl"
             :title="post.title"
             :subtext="post.subtext"

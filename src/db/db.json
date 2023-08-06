@@ -231,19 +231,19 @@
       "title": "Top esssential Trends in 2021",
       "subtext": "More off this less hello samlande lied much over tightly circa horse taped mightly",
       "imageUrl": "src/assets/office.jpg",
-      "id": "link-1"
+      "slug": "link-1"
     },
     {
       "title": "Top esssential Trends in 2021",
       "subtext": "More off this less hello samlande lied much over tightly circa horse taped mightly",
       "imageUrl": "src/assets/hall.jpg",
-      "id": "link-2"
+      "slug": "link-2"
     },
     {
       "title": "Top esssential Trends in 2021",
       "subtext": "More off this less hello samlande lied much over tightly circa horse taped mightly",
       "imageUrl": "src/assets/living-room.jpg",
-      "id": "link-3"
+      "slug": "link-3"
     }
   ]
 }

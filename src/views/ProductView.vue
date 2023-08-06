@@ -3,4 +3,19 @@
 </template>
 
 <script setup lang="ts">
+import Api from '@/api'
+import { onMounted } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
+onMounted(() => {
+  const id = route.query.id
+  console.log(id, 'id')
+  if (id) {
+    Api.getProductDetails(+id).then((res) => {
+      console.log(res, 'res')
+    })
+  }
+})
 </script>
