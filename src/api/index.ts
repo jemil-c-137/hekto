@@ -1,5 +1,5 @@
 import data from '../db/db.json'
-import { IAllProductsResponse } from '@/types'
+import { IAllProductsResponse, IProduct } from '@/types'
 
 class Api {
   static async getAllProducts() {
@@ -17,20 +17,22 @@ class Api {
   }
 
   static async getProductDetails(id: number) {
-    return new Promise((resolve, reject) => {
+    return new Promise<IProduct>((resolve, reject) => {
       const isSuccess = data !== undefined
 
+      if (!isSuccess) {
+        reject(new Error('Something went wrong!')) // Oops! Something went wrong!
+      }
+
       setTimeout(() => {
+        const products = data.productsData
+        const product = products.filter((prod) => prod.id === id)[0]
         if (isSuccess) {
-          const products = data.productsData
-          const product = products.filter((prod) => prod.id === id)
           resolve(product)
         } else {
           reject(new Error('Something went wrong!')) // Oops! Something went wrong!
         }
       }, 250)
-    }).then((res) => {
-      console.log(res, 'response')
     })
   }
 }

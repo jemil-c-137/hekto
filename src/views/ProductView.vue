@@ -10,7 +10,7 @@ import { useRoute } from 'vue-router'
 const route = useRoute()
 
 onMounted(() => {
-  const id = route.query.id
+  const id = route.params.id
   console.log(id, 'id')
   if (id) {
     Api.getProductDetails(+id).then((res) => {
