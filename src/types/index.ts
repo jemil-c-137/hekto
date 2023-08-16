@@ -12,6 +12,15 @@ export interface IProduct {
   code: string | null
   imageUrl: string
   discountedPrice: string | null
+  rating: number
+  reviewsCount: number
+  color: {
+    name: string,
+    hexValue: string
+  }
+  description: string
+  categories: string[]
+  tags: string[] | null
 }
 
 export interface IBlogPost {

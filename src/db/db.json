@@ -6,7 +6,16 @@
       "code": "Code - Y532203",
       "imageUrl": "src/assets/chair2.png",
       "id": 2,
-      "discountedPrice": null
+      "discountedPrice": null,
+      "rating": 4,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
     },
     {
       "name": "Cantiliver chair",
@@ -14,7 +23,16 @@
       "code": "Code - Y532203",
       "imageUrl": "src/assets/chair1.png",
       "id": 1,
-      "discountedPrice": null
+      "discountedPrice": null,
+      "rating": 3.5,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
     },
     {
       "name": "Cantiliver chair",
@@ -22,7 +40,16 @@
       "code": "Code - Y532203",
       "imageUrl": "src/assets/chair3.png",
       "id": 3,
-      "discountedPrice": null
+      "discountedPrice": null,
+      "rating": 5,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
     },
     {
       "name": "Cantiliver chair",
@@ -30,7 +57,16 @@
       "code": "Code - Y532203",
       "imageUrl": "src/assets/chair4.png",
       "id": 4,
-      "discountedPrice": null
+      "discountedPrice": null,
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
     }
   ],
   "latestProductsData": [
@@ -40,7 +76,16 @@
       "price": "$42.00",
       "discountedPrice": "$65.00",
       "imageUrl": "src/assets/new-arrival/chair1.png",
-      "id": 5
+      "id": 5,
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
     },
     {
       "name": "Comfort Handy Craft",
@@ -48,7 +93,16 @@
       "price": "$42.00",
       "imageUrl": "src/assets/new-arrival/chair2.png",
       "id": 6,
-      "discountedPrice": null
+      "discountedPrice": null,
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
     },
     {
       "name": "Comfort Handy Craft",
@@ -56,7 +110,16 @@
       "price": "$42.00",
       "imageUrl": "src/assets/new-arrival/chair3.png",
       "id": 7,
-      "discountedPrice": "$65.00"
+      "discountedPrice": "$65.00",
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
     },
     {
       "name": "Comfort Handy Craft",
@@ -64,7 +127,16 @@
       "price": "$42.00",
       "imageUrl": "src/assets/new-arrival/chair4.png",
       "id": 7,
-      "discountedPrice": null
+      "discountedPrice": null,
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
     },
     {
       "name": "Comfort Handy Craft",
@@ -72,7 +144,16 @@
       "price": "$42.00",
       "imageUrl": "src/assets/new-arrival/chair5.png",
       "id": 8,
-      "discountedPrice": "$65.00"
+      "discountedPrice": "$65.00",
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
     },
     {
       "name": "Comfort Handy Craft",
@@ -80,7 +161,16 @@
       "price": "$42.00",
       "imageUrl": "src/assets/new-arrival/chair6.png",
       "id": 9,
-      "discountedPrice": null
+      "discountedPrice": null,
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
     }
   ],
   "trendingProducts": [
@@ -90,7 +180,16 @@
       "discountedPrice": "$42.00",
       "imageUrl": "src/assets/trending/gray-chair.png",
       "id": 10,
-      "code": null
+      "code": null,
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
     },
     {
       "name": "Cantilever chair",
@@ -98,7 +197,16 @@
       "discountedPrice": "$42.00",
       "imageUrl": "src/assets/trending/white-chair.png",
       "id": 11,
-      "code": null
+      "code": null,
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
     },
     {
       "name": "Cantilever chair",
@@ -106,7 +214,16 @@
       "discountedPrice": "$42.00",
       "imageUrl": "src/assets/trending/black-chair.png",
       "id": 12,
-      "code": null
+      "code": null,
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
     },
     {
       "name": "Cantilever chair",
@@ -114,7 +231,16 @@
       "discountedPrice": "$42.00",
       "imageUrl": "src/assets/trending/red-chair.png",
       "id": 13,
-      "code": null
+      "code": null,
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
     }
   ],
   "topCategories": [
@@ -125,7 +251,16 @@
         "imageUrl": "src/assets/chair5.png",
         "code": null,
         "id": 14,
-        "discountedPrice": null
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
       },
       {
         "name": "Mini LCW Chair",
@@ -133,7 +268,16 @@
         "imageUrl": "src/assets/chair3.png",
         "code": null,
         "id": 15,
-        "discountedPrice": null
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
       },
       {
         "name": "Mini LCW Chair",
@@ -141,7 +285,16 @@
         "imageUrl": "src/assets/chair4.png",
         "code": null,
         "id": 16,
-        "discountedPrice": null
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
       },
       {
         "name": "Mini LCW Chair",
@@ -149,6 +302,15 @@
         "imageUrl": "src/assets/chair2.png",
         "code": null,
         "id": 17,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"],
         "discountedPrice": null
       }
     ],
@@ -159,7 +321,16 @@
         "imageUrl": "src/assets/trending/gray-chair.png",
         "code": null,
         "id": 18,
-        "discountedPrice": null
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
       },
       {
         "name": "Cantilever chair",
@@ -167,7 +338,16 @@
         "imageUrl": "src/assets/trending/white-chair.png",
         "code": null,
         "id": 19,
-        "discountedPrice": null
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
       },
       {
         "name": "Cantilever chair",
@@ -175,7 +355,16 @@
         "imageUrl": "src/assets/trending/black-chair.png",
         "code": null,
         "id": 20,
-        "discountedPrice": null
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
       },
       {
         "name": "Cantilever chair",
@@ -183,7 +372,16 @@
         "imageUrl": "src/assets/trending/red-chair.png",
         "code": null,
         "id": 21,
-        "discountedPrice": null
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
       }
     ],
     [
@@ -193,7 +391,16 @@
         "imageUrl": "src/assets/new-arrival/chair2.png",
         "code": null,
         "id": 22,
-        "discountedPrice": null
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
       },
       {
         "name": "Comfort Handy Craft",
@@ -201,7 +408,16 @@
         "imageUrl": "src/assets/new-arrival/chair3.png",
         "code": null,
         "id": 23,
-        "discountedPrice": null
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
       },
       {
         "name": "Comfort Handy Craft",
@@ -209,7 +425,16 @@
         "imageUrl": "src/assets/new-arrival/chair5.png",
         "code": null,
         "id": 25,
-        "discountedPrice": null
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
       },
       {
         "name": "Comfort Handy Craft",
@@ -217,7 +442,16 @@
         "imageUrl": "src/assets/new-arrival/chair6.png",
         "code": null,
         "id": 26,
-        "discountedPrice": null
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
       }
     ]
   ],
