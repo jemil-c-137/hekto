@@ -217,7 +217,7 @@
             <div
               class="bg-purple-white flex justify-center items-center group-hover:bg-pantone-purple"
             >
-              <img src="src/assets/sale/chair11.png" alt="" />
+              <img src="@/assets/sale/chair11.png" alt="" />
             </div>
             <div class="bg-white px-2 group-hover:bg-off-navy-blue group-hover:text-white">
               <p class="font-semibold">Executive Seat chair</p>
@@ -230,7 +230,7 @@
             <div
               class="bg-purple-white flex justify-center items-center group-hover:bg-pantone-purple"
             >
-              <img src="src/assets/sale/chair11.png" alt="" />
+              <img src="@/assets/sale/chair11.png" alt="" />
             </div>
             <div class="bg-white px-2 group-hover:bg-off-navy-blue group-hover:text-white">
               <p class="font-semibold">Executive Seat chair</p>
@@ -243,7 +243,7 @@
             <div
               class="bg-purple-white flex justify-center items-center group-hover:bg-pantone-purple"
             >
-              <img src="src/assets/sale/chair11.png" alt="" />
+              <img src="@/assets/sale/chair11.png" alt="" />
             </div>
             <div class="bg-white px-2 group-hover:bg-off-navy-blue group-hover:text-white">
               <p class="font-semibold">Executive Seat chair</p>
@@ -257,7 +257,7 @@
         <h5 class="section-title mb-32">Discount items</h5>
         <div class="flex flex-col md:flex-row items-center">
           <div class="mb-8">
-            <img src="src/assets/discount/wood-chair.png" alt="" />
+            <img src="@/assets/discount/wood-chair.png" alt="" />
           </div>
           <div class="md:order-[-1]">
             <p class="product-title mb-4">20% Discount of All Products</p>
