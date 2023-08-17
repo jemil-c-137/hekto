@@ -4,7 +4,7 @@
       "name": "Cantiliver chair",
       "price": "$42.00",
       "code": "Code - Y532203",
-      "imageUrl": "/src/assets/chair2.png",
+      "imageUrl": "@/assets/chair2.png",
       "id": 2,
       "discountedPrice": null,
       "rating": 4,
