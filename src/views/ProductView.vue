@@ -1,5 +1,5 @@
 <template>
-  <h1>🚧Page {{ productName }} under construction🚧</h1>
+  <h1 class="text-4xl text-center p-24">🚧Page {{ productName }} is under construction🚧</h1>
 </template>
 
 <script setup lang="ts">
