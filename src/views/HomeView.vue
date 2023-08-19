@@ -339,7 +339,9 @@
     </section>
     <h5 class="section-title mb-32">Top Categories</h5>
 
-    <section class="pt-56 pb-32 text-center bg-[url('src/assets/bg-palm.jpg')] bg-no-repeat">
+    <section
+      class="pt-56 pb-32 text-center bg-[url('https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/bg-palm.jpg?raw=true')] bg-no-repeat"
+    >
       <h3 class="mb-7 section-title">Get Leatest Update By Subscribe 0ur Newslater</h3>
       <button class="button">Show Now</button>
     </section>
