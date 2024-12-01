@@ -85,12 +85,9 @@
           <input
             class="border border-pantone-purple focus:outline-none focus:border-navy-blue hover:border-blue text-base px-4"
           />
-          <button
-            type="submit"
-            class="bg-pink py-2 px-3 active:bg-blue focus:bg-blue hover:bg-off-purple transition-colors"
-          >
+          <BaseButton :rounded="false" size="s">
             <SearchLogo class="w-6" />
-          </button>
+          </BaseButton>
         </form>
       </div>
     </nav>
@@ -104,6 +101,7 @@ import LoginLogo from './svg/logos/LoginLogo.vue'
 import FavoriteLogo from './svg/logos/FavoriteLogo.vue'
 import CartLogo from './svg/logos/CartLogo.vue'
 import SearchLogo from './svg/logos/SearchLogo.vue'
+import BaseButton from './atoms/BaseButton.vue'
 import { watch, ref } from 'vue'
 
 const showMobileNav = ref<boolean>(false)

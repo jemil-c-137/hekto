@@ -11,12 +11,7 @@
             required
             class="text-pale-purple border border-pantone-purple focus:outline-none focus:border-navy-blue hover:border-blue text-lg px-4"
           />
-          <button
-            type="submit"
-            class="bg-pink text-white py-2 px-3 active:bg-blue focus:bg-blue hover:bg-off-purple transition-colors"
-          >
-            Sign Up
-          </button>
+          <BaseButton :rounded="false" size="s">Sign Up</BaseButton>
         </form>
         <p>Contact info</p>
         <p>17 Princess Road, London, Greater London NW1 8JR, UK</p>
@@ -57,3 +52,7 @@
     </div>
   </footer>
 </template>
+
+<script setup lang="ts">
+import BaseButton from './atoms/BaseButton.vue';
+</script>

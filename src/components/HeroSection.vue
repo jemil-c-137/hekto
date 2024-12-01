@@ -11,7 +11,7 @@
       <p class="font-bold text-pale-purple mb-5">
         {{ subtext }}
       </p>
-      <button class="button">Show Now</button>
+      <BaseButton size="l">Show Now</BaseButton>
     </div>
     <div class="flex-1 relative order-[-1] md:order-2">
       <img :src="imageUrl" alt="" srcset="" />
@@ -30,6 +30,8 @@
 </template>
 
 <script setup lang="ts">
+import BaseButton from './atoms/BaseButton.vue';
+
 defineProps<{
   reverse?: boolean
   imageUrl: string

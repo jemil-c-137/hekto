@@ -166,7 +166,7 @@
             <h5 class="product-title mb-7">Unique Features Of leatest & Trending Poducts</h5>
             <BulletList v-if="productList" :items="productList" class="mb-8" />
             <div class="flex flex-row items-center gap-8">
-              <button class="button !px-6 !py-4 max-w-fit">Add to cart</button>
+              <BaseButton>Add to cart</BaseButton>
               <div class="font-josefin">
                 <p class="font-bold">B&B Italian Sofa</p>
                 <p>$32.00</p>
@@ -274,7 +274,7 @@
               </li>
               <li><span class="mr-1 text-off-purple">&#10004;</span>Material expose like metals</li>
             </ol>
-            <button class="button !px-6 !py-4 max-w-fit">Shop Now</button>
+            <BaseButton>Shop Now</BaseButton>
           </div>
         </div>
       </div>
@@ -343,7 +343,7 @@
       class="pt-56 pb-32 text-center bg-[url('https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/bg-palm.jpg?raw=true')] bg-no-repeat"
     >
       <h3 class="mb-7 section-title">Get Leatest Update By Subscribe 0ur Newslater</h3>
-      <button class="button">Show Now</button>
+      <BaseButton>Show Now</BaseButton>
     </section>
     <section class="content-container py-32">
       <div>
@@ -381,7 +381,7 @@ import GraySofa from '../assets/gray-sofa.png'
 import { IBlogPost, IProduct, LatestProductsOptions } from '@/types'
 import { ref, computed, onMounted } from 'vue'
 import Api from '../api'
-
+import BaseButton from '../components/atoms/BaseButton.vue'
 const activeLatestProducts = ref<LatestProductsOptions>(LatestProductsOptions.NewArrival)
 
 const productsData = ref<IProduct[] | null>(null)

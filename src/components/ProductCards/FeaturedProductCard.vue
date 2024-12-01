@@ -9,7 +9,7 @@
         class="hidden group-hover:block absolute bottom-4"
         :to="{ name: 'product-details', params: { id: `${id}` } }"
       >
-        <button class="view-details">View Details</button>
+        <BaseButton :style="'secondary'">View Details</BaseButton>
       </RouterLink>
     </div>
     <div class="pt-4 bg-white text-center group-hover:bg-blue transition-colors">
@@ -29,6 +29,7 @@
 
 <script setup lang="ts">
 import CardActions from './CardActions.vue'
+import BaseButton from '../atoms/BaseButton.vue'
 
 defineProps<{
   name: string

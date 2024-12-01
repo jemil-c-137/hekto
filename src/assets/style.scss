@@ -28,7 +28,3 @@ body {
 .logo-text {
   @apply font-josefin text-4xl text-dark-blue font-bold
 }
-
-.view-details {
-  @apply hover:bg-blue active:bg-dark-navy transition-colors rounded bg-green py-2 px-4 text-white font-josefin
-}

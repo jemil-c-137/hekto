@@ -8,7 +8,7 @@
         class="hidden group-hover:block absolute bottom-4"
         :to="{ name: 'product-details', params: { id: `${id}` } }"
       >
-        <button class="view-details">View Details</button>
+        <BaseButton :style="'secondary'">View Details</BaseButton>
       </RouterLink>
     </div>
     <p class="font-josefin text-xl">{{ name }}</p>
