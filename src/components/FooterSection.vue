@@ -5,14 +5,7 @@
     >
       <div class="pb-8 col-span-full lg:col-start-1 lg:col-end-3">
         <p class="logo-text">Hekto</p>
-        <form class="flex mb-6">
-          <input
-            type="email"
-            required
-            class="text-pale-purple border border-pantone-purple focus:outline-none focus:border-navy-blue hover:border-blue text-lg px-4"
-          />
-          <BaseButton :rounded="false" size="s">Sign Up</BaseButton>
-        </form>
+        <SignUpField />
         <p>Contact info</p>
         <p>17 Princess Road, London, Greater London NW1 8JR, UK</p>
       </div>
@@ -54,5 +47,5 @@
 </template>
 
 <script setup lang="ts">
-import BaseButton from './atoms/BaseButton.vue';
+import SignUpField from "@/components/molecules/SignUpField.vue";
 </script>

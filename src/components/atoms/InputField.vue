@@ -13,5 +13,6 @@ defineProps<{
     modelValue: string;
     placeholder?: string;
     required?: boolean;
+    type?: string;
 }>();
 </script>

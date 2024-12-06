@@ -12,8 +12,7 @@ import { ref } from "vue";
 
 import InputField from "@/components/atoms/InputField.vue";
 import BaseButton from "@/components/atoms/BaseButton.vue";
-import SearchLogo from "../svg/logos/SearchLogo.vue";
-
+import SearchLogo from "@/components/svg/logos/SearchLogo.vue";
 
 const inputValue = ref("");
 
