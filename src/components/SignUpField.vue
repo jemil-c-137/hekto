@@ -7,8 +7,8 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import InputField from "@/components/atoms/InputField.vue";
-import BaseButton from "@/components/atoms/BaseButton.vue";
+import InputField from "@/UI/InputField.vue";
+import BaseButton from "@/UI/BaseButton.vue";
 
 const email = ref("");
 

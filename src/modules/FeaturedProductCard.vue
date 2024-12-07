@@ -28,8 +28,8 @@
 </template>
 
 <script setup lang="ts">
-import CardActions from './CardActions.vue'
-import BaseButton from '../atoms/BaseButton.vue'
+import CardActions from '@/components/CardActions.vue'
+import BaseButton from '@/UI/BaseButton.vue'
 
 defineProps<{
   name: string

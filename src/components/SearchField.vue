@@ -10,9 +10,9 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-import InputField from "@/components/atoms/InputField.vue";
-import BaseButton from "@/components/atoms/BaseButton.vue";
-import SearchLogo from "@/components/svg/logos/SearchLogo.vue";
+import InputField from "@/UI/InputField.vue";
+import BaseButton from "@/UI/BaseButton.vue";
+import SearchLogo from "@/UI/svg/logos/SearchLogo.vue";
 
 const inputValue = ref("");
 
