@@ -92,8 +92,8 @@ import PhoneLogo from './svg/logos/PhoneLogo.vue'
 import MailLogo from './svg/logos/MailLogo.vue'
 import LoginLogo from './svg/logos/LoginLogo.vue'
 import FavoriteLogo from './svg/logos/FavoriteLogo.vue'
-import CartLogo from './svg/logos/CartLogo.vue'
-import SearchField from './molecules/SearchField.vue'
+import CartLogo from '@/components/svg/logos/CartLogo.vue'
+import SearchField from '@/components/molecules/SearchField.vue'
 
 import { watch, ref } from 'vue'
 
