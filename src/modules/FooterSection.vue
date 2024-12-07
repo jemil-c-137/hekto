@@ -47,5 +47,5 @@
 </template>
 
 <script setup lang="ts">
-import SignUpField from "@/components/molecules/SignUpField.vue";
+import SignUpField from "@/components/SignUpField.vue";
 </script>

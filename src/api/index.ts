@@ -1,5 +1,5 @@
-import data from '../db/db.json'
-import { IAllProductsResponse, IProduct } from '@/types'
+import data from '@/shared/db/db.json'
+import { IAllProductsResponse, IProduct } from '@/shared/types'
 
 class Api {
   static async getAllProducts() {

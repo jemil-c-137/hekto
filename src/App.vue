@@ -1,13 +1,11 @@
 <template>
-  <HeaderNav />
-
-  <RouterView />
-
-  <FooterSection />
+    <HeaderNav />
+    <RouterView />
+    <FooterSection />
 </template>
 
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import HeaderNav from './components/HeaderNav.vue'
-import FooterSection from './components/FooterSection.vue'
+import HeaderNav from '@/modules/HeaderNav.vue'
+import FooterSection from '@/modules/FooterSection.vue'
 </script>
