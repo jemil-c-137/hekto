@@ -81,14 +81,7 @@
         </li>
       </ul>
       <div>
-        <form class="flex">
-          <input
-            class="border border-pantone-purple focus:outline-none focus:border-navy-blue hover:border-blue text-base px-4"
-          />
-          <BaseButton :rounded="false" size="s">
-            <SearchLogo class="w-6" />
-          </BaseButton>
-        </form>
+        <SearchField />
       </div>
     </nav>
   </header>
@@ -99,9 +92,9 @@ import PhoneLogo from './svg/logos/PhoneLogo.vue'
 import MailLogo from './svg/logos/MailLogo.vue'
 import LoginLogo from './svg/logos/LoginLogo.vue'
 import FavoriteLogo from './svg/logos/FavoriteLogo.vue'
-import CartLogo from './svg/logos/CartLogo.vue'
-import SearchLogo from './svg/logos/SearchLogo.vue'
-import BaseButton from './atoms/BaseButton.vue'
+import CartLogo from '@/components/svg/logos/CartLogo.vue'
+import SearchField from '@/components/molecules/SearchField.vue'
+
 import { watch, ref } from 'vue'
 
 const showMobileNav = ref<boolean>(false)
