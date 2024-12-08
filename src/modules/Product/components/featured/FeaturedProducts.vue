@@ -14,8 +14,8 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
-import FeaturedProductCard from './ProductsCards/FeaturedProductCard.vue'
-import { fetchFeaturedProducts } from '../api/fetchProducts';
+import FeaturedProductCard from './FeaturedProductCard.vue'
+import { fetchFeaturedProducts } from '../../api/fetchProducts';
 import { IProduct } from '@/shared/types';
 
 const featuredProducts = ref<IProduct[] | null>(null);

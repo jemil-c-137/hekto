@@ -66,8 +66,8 @@
 <script setup lang="ts">
 import { IProduct } from '@/shared/types'
 import { ref, onMounted } from 'vue'
-import { fetchTopCategories } from '../api/fetchTopCategories'
-import TopCategoryCard from './ProductsCards/TopCategoryCard.vue'
+import { fetchTopCategories } from '../../api/fetchTopCategories'
+import TopCategoryCard from './TopCategoryCard.vue'
 
 const topCategories = ref<IProduct[][] | null>(null)
 

@@ -82,9 +82,9 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import TrendingProductCard from './ProductsCards/TrendingProductCard.vue'
+import TrendingProductCard from './TrendingProductCard.vue'
 import { IProduct } from '@/shared/types';
-import { fetchTrendingProducts } from '../api/fetchTrendingProducts';
+import { fetchTrendingProducts } from '../../api/fetchTrendingProducts';
 
 const trendingProducts = ref<IProduct[]>([]);
 

@@ -37,7 +37,7 @@
     </div>
 
     <div class="mb-32 grid gap-y-6 gap-x-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center">
-        <LatestProductsCard
+        <LatestProductCard
             v-for="product in latestProducts"
             :key="product.id"
             :code="product.code"
@@ -53,9 +53,9 @@
 <script setup lang="ts">
 import { LatestProductsOptions } from '@/shared/types';
 import { ref, onMounted } from 'vue';
-import { fetchLatestProducts } from '../api/fetchLatestProducts';
+import { fetchLatestProducts } from '../../api/fetchLatestProducts';
 import { IProduct } from '@/shared/types';
-import LatestProductsCard from './ProductsCards/LatestProductsCard.vue';
+import LatestProductCard from './LatestProductCard.vue';
 
 const activeLatestProducts = ref<LatestProductsOptions>(LatestProductsOptions.NewArrival);
 
