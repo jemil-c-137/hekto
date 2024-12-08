@@ -24,8 +24,8 @@
 </template>
 
 <script setup lang="ts">
-import PenIcon from '../svg/logos/PenIcon.vue'
-import CalendarIcon from '../svg/logos/CalendarIcon.vue'
+import PenIcon from '@/UI/svg/logos/PenIcon.vue'
+import CalendarIcon from '@/UI/svg/logos/CalendarIcon.vue'
 
 defineProps<{
   imageUrl: string

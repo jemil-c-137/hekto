@@ -22,9 +22,9 @@
 </template>
 
 <script setup lang="ts">
-import FavoriteLogo from '../../components/svg/logos/FavoriteLogo.vue'
-import CartLogo from '../../components/svg/logos/CartLogo.vue'
-import ZoomInLogo from '../../components/svg/logos/ZoomInLogo.vue'
+import FavoriteLogo from '@/UI/svg/logos/FavoriteLogo.vue'
+import CartLogo from '@/UI/svg/logos/CartLogo.vue'
+import ZoomInLogo from '@/UI/svg/logos/ZoomInLogo.vue'
 import { computed } from 'vue'
 
 const props = withDefaults(

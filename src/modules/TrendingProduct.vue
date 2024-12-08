@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import CardActions from '../../components/ProductCards/CardActions.vue'
+import CardActions from '@/components/CardActions.vue'
 
 defineProps<{
   name: string
