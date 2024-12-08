@@ -4,7 +4,7 @@
       <div
         class="relative h-[260px] bg-light-gray group-hover:bg-white transition-colors flex justify-center items-center mb-4 rounded"
       >
-        <img :src="imgUrl" alt="" />
+        <img :src="imageUrl" alt="" />
         <SaleBadge v-if="discountedPrice" class="absolute left-5 top-5" />
         <CardActions placement="bottom-left" :vertical="true" />
       </div>
@@ -29,11 +29,7 @@
 import SaleBadge from '@/UI/svg/SaleBadge.vue'
 import CardActions from '@/components/CardActions.vue'
 
-defineProps<{
-  name: string
-  price: string
-  imgUrl: string
-  discountedPrice: string | null
-  id: string
-}>()
+import { ProductCardProps } from '../../types'
+
+defineProps<ProductCardProps>()
 </script>
