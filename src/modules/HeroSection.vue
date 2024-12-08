@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import BaseButton from './atoms/BaseButton.vue';
+import BaseButton from '@/UI/BaseButton.vue';
 
 defineProps<{
   reverse?: boolean

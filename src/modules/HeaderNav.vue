@@ -88,12 +88,12 @@
 </template>
 
 <script setup lang="ts">
-import PhoneLogo from './svg/logos/PhoneLogo.vue'
-import MailLogo from './svg/logos/MailLogo.vue'
-import LoginLogo from './svg/logos/LoginLogo.vue'
-import FavoriteLogo from './svg/logos/FavoriteLogo.vue'
-import CartLogo from '@/components/svg/logos/CartLogo.vue'
-import SearchField from '@/components/molecules/SearchField.vue'
+import PhoneLogo from '@/UI/svg/logos/PhoneLogo.vue'
+import MailLogo from '@/UI/svg/logos/MailLogo.vue'
+import LoginLogo from '@/UI/svg/logos/LoginLogo.vue'
+import FavoriteLogo from '@/UI/svg/logos/FavoriteLogo.vue'
+import CartLogo from '@/UI/svg/logos/CartLogo.vue'
+import SearchField from '@/components/SearchField.vue'
 
 import { watch, ref } from 'vue'
 

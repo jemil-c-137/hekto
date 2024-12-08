@@ -26,8 +26,8 @@
 </template>
 
 <script setup lang="ts">
-import SaleBadge from '../svg/SaleBadge.vue'
-import CardActions from './CardActions.vue'
+import SaleBadge from '@/UI/svg/SaleBadge.vue'
+import CardActions from '@/components/CardActions.vue'
 
 defineProps<{
   name: string
