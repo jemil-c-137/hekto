@@ -8,9 +8,9 @@ class Api {
 
       setTimeout(() => {
         if (isSuccess) {
-          resolve(data) // Yay! Everything went well!
+          resolve(data)
         } else {
-          reject(new Error('Something went wrong!')) // Oops! Something went wrong!
+          reject(new Error('Something went wrong!'))
         }
       }, 250)
     })

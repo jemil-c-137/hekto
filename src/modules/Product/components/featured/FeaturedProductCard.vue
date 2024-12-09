@@ -31,11 +31,7 @@
 import CardActions from '@/components/CardActions.vue'
 import BaseButton from '@/UI/BaseButton.vue'
 
-defineProps<{
-  name: string
-  price: string
-  code: string | null
-  imageUrl: string
-  id: number
-}>()
+import { ProductCardProps } from '../../types';
+
+defineProps<ProductCardProps>()
 </script>

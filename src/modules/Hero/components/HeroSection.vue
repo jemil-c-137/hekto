@@ -18,7 +18,7 @@
       <div
         class="absolute top-6 right-4 w-full max-w-[60px] md:max-w-[140px] h-full max-h-[60px] md:max-h-[140px]"
       >
-        <img class="absolute" src="../assets/discount.png" alt="" srcset="" />
+        <img class="absolute" src="@/shared/assets/discount.png" alt="" srcset="" />
         <div
           class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-base md:text-4xl font-josefin font-bold text-center text-white"
         >

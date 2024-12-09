@@ -24,12 +24,7 @@
 
 <script setup lang="ts">
 import CardActions from '@/components/CardActions.vue'
+import { ProductCardProps } from '../../types'
 
-defineProps<{
-  name: string
-  imageUrl: string
-  price: string
-  discountedPrice: string | null
-  id: number
-}>()
+defineProps<ProductCardProps>()
 </script>

@@ -17,5 +17,7 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{ name: string; price: string; imageUrl: string; id: number }>()
+import { ProductCardProps } from '../../types'
+
+defineProps<ProductCardProps>()
 </script>
