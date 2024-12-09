@@ -1,0 +1,1 @@
+export { default as FeaturedBlogs } from './components/FeaturedBlogs.vue'
