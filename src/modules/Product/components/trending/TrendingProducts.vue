@@ -1,7 +1,9 @@
 <template>
     <section class="content-container">
       <h3 class="section-title mb-12">Trending Products</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <LoadingSpinner v-if="loading" />
+      <AlertMessage v-else-if="error" :message="error" type="error" />
+      <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
         <TrendingProductCard
           v-for="product in trendingProducts"
           :key="product.id"
@@ -81,15 +83,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
 import TrendingProductCard from './TrendingProductCard.vue'
-import { IProduct } from '@/shared/types';
-import { fetchTrendingProducts } from '../../api/fetchTrendingProducts';
+import { useProducts } from '../../composables/useProducts';
+import LoadingSpinner from '@/UI/LoadingSpinner.vue'
+import AlertMessage from '@/UI/AlertMessage.vue'
 
-const trendingProducts = ref<IProduct[]>([]);
+const { products: trendingProducts, loading, error } = useProducts('trending');
 
-onMounted(async () => {
-    const productsData = await fetchTrendingProducts();
-    trendingProducts.value = productsData;
-})
 </script>

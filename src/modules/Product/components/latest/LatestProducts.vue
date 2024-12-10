@@ -1,7 +1,8 @@
 <template>
     <h3 class="section-title mb-3">Latest Products</h3>
-
-    <div class="flex justify-center gap-3 mb-14">
+    <LoadingSpinner v-if="loading" />
+    <AlertMessage v-else-if="error" :message="error" type="error" />
+    <div v-else class="flex justify-center gap-3 mb-14">
     <span
         :class="[
         activeLatestProducts === LatestProductsOptions.NewArrival && 'text-pink underline'
@@ -52,19 +53,14 @@
 
 <script setup lang="ts">
 import { LatestProductsOptions } from '@/shared/types';
-import { ref, onMounted } from 'vue';
-import { fetchLatestProducts } from '../../api/fetchLatestProducts';
-import { IProduct } from '@/shared/types';
+import { ref } from 'vue';
+import { useProducts } from '../../composables/useProducts'
 import LatestProductCard from './LatestProductCard.vue';
-
+import LoadingSpinner from '@/UI/LoadingSpinner.vue'
+import AlertMessage from '@/UI/AlertMessage.vue'
 const activeLatestProducts = ref<LatestProductsOptions>(LatestProductsOptions.NewArrival);
 
-const latestProducts = ref<IProduct[] | null>(null);
-
-onMounted(async () => {
-    const productsData = await fetchLatestProducts();
-    latestProducts.value = productsData;
-})
+const { products: latestProducts, loading, error } = useProducts('latest');
 
 const setActiveLatestProduct = (value: LatestProductsOptions) => {
     activeLatestProducts.value = value
