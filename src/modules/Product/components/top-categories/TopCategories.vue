@@ -1,6 +1,8 @@
 <template>
     <section class="content-container">
         <h5 class="section-title mb-32">Top Categories</h5>
+        <LoadingSpinner v-if="loading" />
+        <AlertMessage v-else-if="error" :message="error" type="error" />
         <swiper-container
             v-if="topCategories"
             :style="{
@@ -64,16 +66,11 @@
 </template>
 
 <script setup lang="ts">
-import { IProduct } from '@/shared/types'
-import { ref, onMounted } from 'vue'
-import { fetchTopCategories } from '../../api/fetchTopCategories'
 import TopCategoryCard from './TopCategoryCard.vue'
+import { useProducts } from '../../composables/useProducts'
+import LoadingSpinner from '@/UI/LoadingSpinner.vue'
+import AlertMessage from '@/UI/AlertMessage.vue'
 
-const topCategories = ref<IProduct[][] | null>(null)
+const { topCategories, loading, error } = useProducts('topCategories');
 
-onMounted(() => {
-    fetchTopCategories().then((data) => {
-        topCategories.value = data
-    })
-})
 </script>
