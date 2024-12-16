@@ -1,6 +1,6 @@
 <template>
   <header class="relative">
-    <div class="bg-purple text-white py-2 w-full" :class="[showMobileNav && 'fixed']">
+    <div class="bg-brand-interactive text-white py-2 w-full" :class="[showMobileNav && 'fixed']">
       <div class="content-container flex justify-between">
         <div class="md:flex gap-12 hidden">
           <div class="flex gap-2 items-center">
@@ -58,25 +58,25 @@
     <nav class="content-container flex flex-col md:flex-row justify-between items-center py-5">
       <div><h3 class="logo-text">Hekto</h3></div>
       <ul
-        class="hidden md:flex md:justify-between md:items-center md:gap-2 md:text-base text-dark-blue"
+        class="hidden md:flex md:justify-between md:items-center md:gap-2 md:text-base text-brand-heading"
         :class="[
           showMobileNav &&
             '!flex fixed mt-11 z-10 w-full h-full bg-white text-center text-2xl gap-y-4 flex-col justify-center'
         ]"
       >
-        <li class="hover:text-pink transition-colors">
+        <li class="hover:text-brand-primary transition-colors">
           <RouterLink to="/">Home</RouterLink>
         </li>
-        <li class="hover:text-pink transition-colors">
+        <li class="hover:text-brand-primary transition-colors">
           <RouterLink to="/products">Products</RouterLink>
         </li>
-        <li class="hover:text-pink transition-colors">
+          <li class="hover:text-brand-primary transition-colors">
           <RouterLink to="/blog">Blog</RouterLink>
         </li>
-        <li class="hover:text-pink transition-colors">
+        <li class="hover:text-brand-primary transition-colors">
           <RouterLink to="/about">About</RouterLink>
         </li>
-        <li class="hover:text-pink transition-colors">
+        <li class="hover:text-brand-primary transition-colors">
           <RouterLink to="/contact">Contact</RouterLink>
         </li>
       </ul>

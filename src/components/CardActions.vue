@@ -4,17 +4,17 @@
     :class="[vertical ? 'flex-col' : 'flex-row', position]"
   >
     <span
-      class="p-1 rounded-full bg-pale-purple hover:bg-off-navy-blue hover:cursor-pointer transition-colors"
+      class="p-1 rounded-full bg-brand-muted hover:bg-brand-highlight hover:cursor-pointer transition-colors"
     >
       <CartLogo class="w-4 text-white" />
     </span>
     <span
-      class="p-1 rounded-full bg-pale-purple hover:bg-off-navy-blue hover:cursor-pointer transition-colors"
+      class="p-1 rounded-full bg-brand-muted hover:bg-brand-highlight hover:cursor-pointer transition-colors"
     >
       <FavoriteLogo class="w-4 text-white" />
     </span>
     <span
-      class="p-1 rounded-full bg-pale-purple hover:bg-off-navy-blue hover:cursor-pointer transition-colors"
+      class="p-1 rounded-full bg-pale-brand-muted hover:bg-brand-highlight hover:cursor-pointer transition-colors"
     >
       <ZoomInLogo class="w-4 text-white" />
     </span>

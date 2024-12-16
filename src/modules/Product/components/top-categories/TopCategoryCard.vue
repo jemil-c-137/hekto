@@ -1,7 +1,7 @@
 <template>
   <div class="text-center w-[270px] mx-auto my-0 group">
     <div
-      class="relative w-full h-[270px] bg-purple-white rounded-full flex justify-center items-center shadow-md group-hover:shadow-purple group-hover:shadow-2xl mb-10"
+      class="relative w-full h-[270px] bg-brand-bg-secondary rounded-full flex justify-center items-center shadow-md group-hover:shadow-brand-interactive group-hover:shadow-2xl mb-10"
     >
       <img :src="imageUrl" alt="" />
       <RouterLink

@@ -4,11 +4,11 @@
     class="content-container flex flex-col py-9 items-center gap-y-16 md:gap-x-5 justify-between"
   >
     <div class="flex-1">
-      <p class="font-bold text-pink mb-3">{{ leadingText }}</p>
+      <p class="font-bold text-brand-primary mb-3">{{ leadingText }}</p>
       <h2 class="text-[53px] font-josefin tracking-wide mb-3">
         {{ name }}
       </h2>
-      <p class="font-bold text-pale-purple mb-5">
+      <p class="font-bold text-brand-muted mb-5">
         {{ subtext }}
       </p>
       <BaseButton size="l">Show Now</BaseButton>

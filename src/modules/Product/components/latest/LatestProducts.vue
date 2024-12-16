@@ -5,39 +5,39 @@
     <div v-else class="flex justify-center gap-3 mb-14">
     <span
         :class="[
-        activeLatestProducts === LatestProductsOptions.NewArrival && 'text-pink underline'
+        activeLatestProducts === LatestProductsOptions.NewArrival && 'text-brand-primary underline'
         ]"
         @click="setActiveLatestProduct(LatestProductsOptions.NewArrival)"
-        class="cursor-pointer text-lg hover:underline hover:text-pink transition-colors"
+        class="cursor-pointer text-lg hover:underline hover:text-brand-primary transition-colors"
         >New Arrival</span
     >
     <span
         :class="[
-        activeLatestProducts === LatestProductsOptions.BestSeller && 'text-pink underline'
+        activeLatestProducts === LatestProductsOptions.BestSeller && 'text-brand-primary underline'
         ]"
         @click="setActiveLatestProduct(LatestProductsOptions.BestSeller)"
-        class="cursor-pointer text-lg hover:underline hover:text-pink transition-colors"
+        class="cursor-pointer text-lg hover:underline hover:text-brand-primary transition-colors"
         >Best Seller</span
     >
     <span
         :class="[
-        activeLatestProducts === LatestProductsOptions.Featured && 'text-pink underline'
+        activeLatestProducts === LatestProductsOptions.Featured && 'text-brand-primary underline'
         ]"
         @click="setActiveLatestProduct(LatestProductsOptions.Featured)"
-        class="cursor-pointer text-lg hover:underline hover:text-pink transition-colors"
+        class="cursor-pointer text-lg hover:underline hover:text-brand-primary transition-colors"
         >Featured</span
     >
     <span
         :class="[
-        activeLatestProducts === LatestProductsOptions.SpecialOffer && 'text-pink underline'
+        activeLatestProducts === LatestProductsOptions.SpecialOffer && 'text-brand-primary underline'
         ]"
         @click="setActiveLatestProduct(LatestProductsOptions.SpecialOffer)"
-        class="cursor-pointer text-lg hover:underline hover:text-pink transition-colors"
+        class="cursor-pointer text-lg hover:underline hover:text-brand-primary transition-colors"
         >Special Offer</span
     >
     </div>
 
-    <div class="mb-32 grid gap-y-6 gap-x-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center">
+    <div v-if="!loading && !error" class="mb-32 grid gap-y-6 gap-x-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center">
         <LatestProductCard
             v-for="product in latestProducts"
             :key="product.id"
@@ -63,6 +63,10 @@ const activeLatestProducts = ref<LatestProductsOptions>(LatestProductsOptions.Ne
 const { products: latestProducts, loading, error } = useProducts('latest');
 
 const setActiveLatestProduct = (value: LatestProductsOptions) => {
-    activeLatestProducts.value = value
+    loading.value = true;
+    setTimeout(() => {
+        activeLatestProducts.value = value
+        loading.value = false;
+    }, 1000)
 }
 </script>

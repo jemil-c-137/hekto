@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-light">
+    <section class="bg-brand-bg-primary">
       <swiper-container
         :style="{
           '--swiper-pagination-color': '#FB2E86',

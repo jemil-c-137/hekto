@@ -15,7 +15,7 @@
       </div>
 
       <p class="mb-4 text-lg font-josefin font-bold">{{ title }}</p>
-      <p class="text-steel-blue leading-7 mb-4">
+      <p class="text-brand-text-secondary leading-7 mb-4">
         {{ subtext }}
       </p>
       <a href="#" class="link">Read More</a>

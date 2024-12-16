@@ -14,11 +14,11 @@ body {
 }
 
 .button {
-  @apply bg-pink py-4 px-8 text-white text-lg font-bold font-josefin rounded hover:bg-blue transition-colors active:bg-dark-blue;
+  @apply bg-brand-primary py-4 px-8 text-white text-lg font-bold font-josefin rounded hover:bg-brand-secondary transition-colors active:bg-brand-heading;
 }
 
 .link {
-  @apply text-pink underline font-medium underline-offset-4 hover:text-blue transition-colors;
+  @apply text-brand-primary underline font-medium underline-offset-4 hover:text-brand-primary transition-colors;
 }
 
 .lock-scroll {
@@ -26,5 +26,5 @@ body {
 }
 
 .logo-text {
-  @apply font-josefin text-4xl text-dark-blue font-bold
+  @apply font-josefin text-4xl text-brand-heading font-bold
 }
