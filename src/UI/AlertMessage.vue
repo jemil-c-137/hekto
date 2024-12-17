@@ -1,9 +1,11 @@
 <template>
-    <div :class="alertClass" role="alert">
-    <div>
-        {{ message }}
+    <div class="flex items-center p-4 mb-4 text-sm border rounded-lg" 
+        :class="alertClass" 
+        role="alert">
+        <div class="text-sm">
+            {{ message }}
+        </div>
     </div>
-</div>
 </template>
 
 <script setup lang="ts">
@@ -14,7 +16,16 @@ const props = defineProps<{
 }>()
 
 const alertClass = computed(() => {
-    return `flex items-center p-4 mb-4 text-sm text-${props.type}-800 border border-${props.type}-300 rounded-lg bg-${props.type}-50 dark:bg-gray-800 dark:text-${props.type}-400 dark:border-${props.type}-800`
+    switch (props.type) {
+        case 'success':
+            return 'border-brand-mint bg-green bg-opacity-70'
+        case 'error':
+            return 'text-red-800 border-red-300 bg-red-50'
+        case 'info':
+            return 'text-blue-800 border-blue-300 bg-blue-50'
+        default:
+            return 'text-gray-800 border-gray-300 bg-gray-50'
+    }
 })
 
 </script>

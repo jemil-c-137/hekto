@@ -19,7 +19,7 @@
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[3fr_3fr_2fr] grid-rows-[(repeat_3,_minmax(auto,_270px))] gap-y-10 gap-x-8 mb-48"
       >
         <div
-          class="lg:col-start-1 lg:col-end-1 bg-pantone-purple pt-9 shadow-2xl rounded hover:bg-pale-purple cursor-pointer"
+          class="lg:col-start-1 lg:col-end-1 bg-brand-decorative pt-9 shadow-2xl rounded hover:bg-brand-muted cursor-pointer"
         >
           <p class="pl-5 font-josefin text-2xl font-semibold">23% off in all products</p>
           <a href="#" class="pl-5 link">Shop now</a>
@@ -28,7 +28,7 @@
           </div>
         </div>
         <div
-          class="lg:col-start-2 lg:col-end-3 bg-purple-white pt-9 shadow-2xl hover:bg-light cursor-pointer"
+          class="lg:col-start-2 lg:col-end-3 bg-purple-white pt-9 shadow-2xl hover:bg-brand-bg-primary cursor-pointer"
         >
           <p class="pl-5 font-josefin text-2xl font-semibold">23% off in all products</p>
           <a href="#" class="pl-5 link">Shop now</a>
@@ -41,11 +41,11 @@
         >
           <div class="grid grid-cols-[1fr_2fr] cursor-pointer group shadow rounded max-w-[270px]">
             <div
-              class="bg-purple-white flex justify-center items-center group-hover:bg-pantone-purple"
+              class="bg-brand-bg-secondary flex justify-center items-center group-hover:bg-brand-interactive"
             >
               <img src="@/assets/sale/chair11.png" alt="" />
             </div>
-            <div class="bg-white px-2 group-hover:bg-off-navy-blue group-hover:text-white">
+            <div class="bg-white px-2 group-hover:bg-brand-highlight group-hover:text-white">
               <p class="font-semibold">Executive Seat chair</p>
               <p class="line-through text-sm">$32.00</p>
               <p class="text-sm">$20.00</p>
@@ -54,11 +54,11 @@
 
           <div class="grid grid-cols-[1fr_2fr] cursor-pointer group shadow rounded max-w-[270px]">
             <div
-              class="bg-purple-white flex justify-center items-center group-hover:bg-pantone-purple"
+              class="bg-brand-bg-secondary flex justify-center items-center group-hover:bg-brand-decorative"
             >
               <img src="@/assets/sale/chair11.png" alt="" />
             </div>
-            <div class="bg-white px-2 group-hover:bg-off-navy-blue group-hover:text-white">
+            <div class="bg-white px-2 group-hover:bg-brand-highlight group-hover:text-white">
               <p class="font-semibold">Executive Seat chair</p>
               <p class="line-through text-sm">$32.00</p>
               <p class="text-sm">$20.00</p>
@@ -67,11 +67,11 @@
 
           <div class="grid grid-cols-[1fr_2fr] cursor-pointer group shadow rounded max-w-[270px]">
             <div
-              class="bg-purple-white flex justify-center items-center group-hover:bg-pantone-purple"
+              class="bg-brand-bg-secondary flex justify-center items-center group-hover:bg-brand-decorative"
             >
               <img src="@/assets/sale/chair11.png" alt="" />
             </div>
-            <div class="bg-white px-2 group-hover:bg-off-navy-blue group-hover:text-white">
+            <div class="bg-white px-2 group-hover:bg-brand-highlight group-hover:text-white">
               <p class="font-semibold">Executive Seat chair</p>
               <p class="line-through text-sm">$32.00</p>
               <p class="text-sm">$20.00</p>

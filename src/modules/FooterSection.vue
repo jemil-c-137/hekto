@@ -1,7 +1,7 @@
 <template>
-  <footer class="bg-light">
+  <footer class="bg-brand-bg-primary">
     <div
-      class="content-container pt-16 text-pale-purple grid grid-cols-1 md:grid-cols-3 gap-12 lg:grid-cols-6"
+      class="content-container pt-16 text-brand-muted grid grid-cols-1 md:grid-cols-3 gap-12 lg:grid-cols-6"
     >
       <div class="pb-8 col-span-full lg:col-start-1 lg:col-end-3">
         <p class="logo-text">Hekto</p>
@@ -11,7 +11,7 @@
       </div>
 
       <div>
-        <p class="cont-josefin text-2xl mb-2 md:mb-10 text-dark-blue">Categories</p>
+        <p class="cont-josefin text-2xl mb-2 md:mb-10 text-brand-heading">Categories</p>
         <ul>
           <li class="mb-5"><a href="">Laptops & Computers</a></li>
           <li class="mb-5"><a href="">Cameras & Photography</a></li>
@@ -22,7 +22,7 @@
       </div>
 
       <div>
-        <p class="cont-josefin text-2xl mb-2 md:mb-10 text-dark-blue">Customer Care</p>
+        <p class="cont-josefin text-2xl mb-2 md:mb-10 text-brand-heading">Customer Care</p>
         <ul>
           <li class="mb-5"><a href="">My Account</a></li>
           <li class="mb-5"><a href="">Discount</a></li>
@@ -33,7 +33,7 @@
       </div>
 
       <div>
-        <p class="cont-josefin text-2xl mb-2 md:mb-10 text-dark-blue">Pages</p>
+        <p class="cont-josefin text-2xl mb-2 md:mb-10 text-brand-heading">Pages</p>
         <ul>
           <li class="mb-5"><a href="">Blog</a></li>
           <li class="mb-5"><a href="">Browse the Shop</a></li>

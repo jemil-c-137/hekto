@@ -1,9 +1,9 @@
 import data from '@/shared/db/db.json'
-import { IAllProductsResponse, IProduct } from '@/shared/types'
+import { IProduct, ProductResponse } from '@/modules/Product'
 
 class Api {
   static async getAllProducts() {
-    return new Promise<IAllProductsResponse>((resolve, reject) => {
+    return new Promise<ProductResponse>((resolve, reject) => {
       const isSuccess = data !== undefined
 
       setTimeout(() => {

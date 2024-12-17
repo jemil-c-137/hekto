@@ -27,10 +27,10 @@ const emit = defineEmits<{
 const classes = computed(() => {
 	switch (props.style) {
 		case 'secondary':
-			return 'hover:bg-blue active:bg-dark-navy transition-colors bg-green text-white font-josefin';
+			return 'hover:bg-brand-secondary active:bg-brand-dark-navy transition-colors bg-brand-success text-white font-josefin';
 		default:
 		case 'primary':
-		return 'bg-pink text-white text-lg font-bold font-josefin hover:bg-blue transition-colors active:bg-dark-blue';
+		return 'bg-brand-primary text-white text-lg font-bold font-josefin hover:bg-brand-secondary transition-colors active:bg-brand-heading';
 	}
 });
 
