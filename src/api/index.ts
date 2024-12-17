@@ -1,16 +1,16 @@
-import data from '../db/db.json'
-import { IAllProductsResponse, IProduct } from '@/types'
+import data from '@/shared/db/db.json'
+import { IProduct, ProductResponse } from '@/modules/Product'
 
 class Api {
   static async getAllProducts() {
-    return new Promise<IAllProductsResponse>((resolve, reject) => {
+    return new Promise<ProductResponse>((resolve, reject) => {
       const isSuccess = data !== undefined
 
       setTimeout(() => {
         if (isSuccess) {
-          resolve(data) // Yay! Everything went well!
+          resolve(data)
         } else {
-          reject(new Error('Something went wrong!')) // Oops! Something went wrong!
+          reject(new Error('Something went wrong!'))
         }
       }, 250)
     })

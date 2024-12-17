@@ -1,0 +1,478 @@
+{
+  "productsData": [
+    {
+      "name": "Cantiliver chair",
+      "price": "$42.00",
+      "code": "Code - Y532203",
+      "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair2.png?raw=true",
+      "id": 2,
+      "discountedPrice": null,
+      "rating": 4,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
+    },
+    {
+      "name": "Cantiliver chair",
+      "price": "$42.00",
+      "code": "Code - Y532203",
+      "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair1.png?raw=true",
+      "id": 1,
+      "discountedPrice": null,
+      "rating": 3.5,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
+    },
+    {
+      "name": "Cantiliver chair",
+      "price": "$42.00",
+      "code": "Code - Y532203",
+      "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair3.png?raw=true",
+      "id": 3,
+      "discountedPrice": null,
+      "rating": 5,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
+    },
+    {
+      "name": "Cantiliver chair",
+      "price": "$42.00",
+      "code": "Code - Y532203",
+      "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair4.png?raw=true",
+      "id": 4,
+      "discountedPrice": null,
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
+    }
+  ],
+  "latestProductsData": [
+    {
+      "name": "Comfort Handy Craft",
+      "code": null,
+      "price": "$42.00",
+      "discountedPrice": "$65.00",
+      "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair1.png?raw=true",
+      "id": 5,
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
+    },
+    {
+      "name": "Comfort Handy Craft",
+      "code": null,
+      "price": "$42.00",
+      "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair2.png?raw=true",
+      "id": 6,
+      "discountedPrice": null,
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
+    },
+    {
+      "name": "Comfort Handy Craft",
+      "code": null,
+      "price": "$42.00",
+      "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair22.png?raw=true",
+      "id": 7,
+      "discountedPrice": "$65.00",
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
+    },
+    {
+      "name": "Comfort Handy Craft",
+      "code": null,
+      "price": "$42.00",
+      "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair25.png?raw=true",
+      "id": 7,
+      "discountedPrice": null,
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
+    },
+    {
+      "name": "Comfort Handy Craft",
+      "code": null,
+      "price": "$42.00",
+      "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair4.png?raw=true",
+      "id": 8,
+      "discountedPrice": "$65.00",
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
+    },
+    {
+      "name": "Comfort Handy Craft",
+      "code": null,
+      "price": "$42.00",
+      "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair24.png?raw=true",
+      "id": 9,
+      "discountedPrice": null,
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
+    }
+  ],
+  "trendingProducts": [
+    {
+      "name": "Cantilever chair",
+      "price": "$26.00",
+      "discountedPrice": "$42.00",
+      "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/gray-chair.png?raw=true",
+      "id": 10,
+      "code": null,
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
+    },
+    {
+      "name": "Cantilever chair",
+      "price": "$26.00",
+      "discountedPrice": "$42.00",
+      "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/white-chair.png?raw=true",
+      "id": 11,
+      "code": null,
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
+    },
+    {
+      "name": "Cantilever chair",
+      "price": "$26.00",
+      "discountedPrice": "$42.00",
+      "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair25.png?raw=true",
+      "id": 12,
+      "code": null,
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
+    },
+    {
+      "name": "Cantilever chair",
+      "price": "$26.00",
+      "discountedPrice": "$42.00",
+      "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/red-chair.png?raw=true",
+      "id": 13,
+      "code": null,
+      "rating": 3,
+      "reviewsCount": 20,
+      "color": {
+        "name": "blakc",
+        "hexValue": "#000"
+      },
+      "description": "lorem",
+      "categories": ["chair"],
+      "tags": ["art-deco"]
+    }
+  ],
+  "topCategories": [
+    [
+      {
+        "name": "Mini LCW Chair",
+        "price": "$56.00",
+        "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair5.png?raw=true",
+        "code": null,
+        "id": 14,
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
+      },
+      {
+        "name": "Mini LCW Chair",
+        "price": "$56.00",
+        "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair3.png?raw=true",
+        "code": null,
+        "id": 15,
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
+      },
+      {
+        "name": "Mini LCW Chair",
+        "price": "$56.00",
+        "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair4.png?raw=true",
+        "code": null,
+        "id": 16,
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
+      },
+      {
+        "name": "Mini LCW Chair",
+        "price": "$56.00",
+        "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair2.png?raw=true",
+        "code": null,
+        "id": 17,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"],
+        "discountedPrice": null
+      }
+    ],
+    [
+      {
+        "name": "Cantilever chair",
+        "price": "$26.00",
+        "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/gray-chair.png?raw=true",
+        "code": null,
+        "id": 18,
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
+      },
+      {
+        "name": "Cantilever chair",
+        "price": "$26.00",
+        "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/white-chair.png?raw=true",
+        "code": null,
+        "id": 19,
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
+      },
+      {
+        "name": "Cantilever chair",
+        "price": "$26.00",
+        "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/black-chair.png?raw=true",
+        "code": null,
+        "id": 20,
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
+      },
+      {
+        "name": "Cantilever chair",
+        "price": "$26.00",
+        "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/red-chair.png?raw=true",
+        "code": null,
+        "id": 21,
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
+      }
+    ],
+    [
+      {
+        "name": "Comfort Handy Craft",
+        "price": "$42.00",
+        "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair2.png?raw=true",
+        "code": null,
+        "id": 22,
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
+      },
+      {
+        "name": "Comfort Handy Craft",
+        "price": "$42.00",
+        "imageUrl": "/src/assets/new-arrival/chair3.png",
+        "code": null,
+        "id": 23,
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
+      },
+      {
+        "name": "Comfort Handy Craft",
+        "price": "$42.00",
+        "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair5.png?raw=true",
+        "code": null,
+        "id": 25,
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
+      },
+      {
+        "name": "Comfort Handy Craft",
+        "price": "$42.00",
+        "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair24.png?raw=true",
+        "code": null,
+        "id": 26,
+        "discountedPrice": null,
+        "rating": 3,
+        "reviewsCount": 20,
+        "color": {
+          "name": "blakc",
+          "hexValue": "#000"
+        },
+        "description": "lorem",
+        "categories": ["chair"],
+        "tags": ["art-deco"]
+      }
+    ]
+  ],
+  "blogposts": [
+    {
+      "title": "Top esssential Trends in 2021",
+      "subtext": "More off this less hello samlande lied much over tightly circa horse taped mightly",
+      "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/office.jpg?raw=true",
+      "slug": "link-1"
+    },
+    {
+      "title": "Top esssential Trends in 2021",
+      "subtext": "More off this less hello samlande lied much over tightly circa horse taped mightly",
+      "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/hall.jpg?raw=true",
+      "slug": "link-2"
+    },
+    {
+      "title": "Top esssential Trends in 2021",
+      "subtext": "More off this less hello samlande lied much over tightly circa horse taped mightly",
+      "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/living-room.jpg?raw=true",
+      "slug": "link-3"
+    }
+  ]
+}
