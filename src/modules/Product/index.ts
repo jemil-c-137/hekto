@@ -20,4 +20,4 @@ export { default as UniqueFeature } from './components/UniqueFeature.vue'
 // Discounted Section
 export { default as DiscountedItems } from './components/DiscountedItems.vue'
 
-export type { ProductCardProps } from './types'
+export type { ProductCardProps, IProduct, ProductResponse, ProductType } from './types'

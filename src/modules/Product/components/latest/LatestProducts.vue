@@ -1,7 +1,6 @@
 <template>
     <h3 class="section-title mb-3">Latest Products</h3>
-    <LoadingSpinner v-if="loading" />
-    <AlertMessage v-else-if="error" :message="error" type="error" />
+    <AlertMessage v-if="error" :message="error" type="error" />
     <div v-else class="flex justify-center gap-3 mb-14">
     <span
         :class="[
@@ -37,6 +36,10 @@
     >
     </div>
 
+    <div v-if="loading" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-3 mb-14">
+        <SkeletonCard v-for="i in 6" :key="i" widthClass="w-full max-w-[360px]" heightClass="h-[260px]" />
+    </div>
+
     <div v-if="!loading && !error" class="mb-32 grid gap-y-6 gap-x-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center">
         <LatestProductCard
             v-for="product in latestProducts"
@@ -56,8 +59,9 @@ import { LatestProductsOptions } from '@/shared/types';
 import { ref } from 'vue';
 import { useProducts } from '../../composables/useProducts'
 import LatestProductCard from './LatestProductCard.vue';
-import LoadingSpinner from '@/UI/LoadingSpinner.vue'
 import AlertMessage from '@/UI/AlertMessage.vue'
+import SkeletonCard from '@/UI/SkeletonCard.vue'
+
 const activeLatestProducts = ref<LatestProductsOptions>(LatestProductsOptions.NewArrival);
 
 const { products: latestProducts, loading, error } = useProducts('latest');

@@ -23,7 +23,7 @@
       </div>
     </div>
   </RouterLink>
-</template>
+</template> 
 
 <script setup lang="ts">
 import SaleBadge from '@/UI/svg/SaleBadge.vue'
