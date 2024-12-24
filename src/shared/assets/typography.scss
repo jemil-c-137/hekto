@@ -1,0 +1,11 @@
+.section-title {
+  @apply text-3xl md:text-4xl text-brand-dark-navy font-josefin font-bold text-center;
+}
+
+.product-title {
+  @apply font-josefin text-4xl font-bold;
+}
+
+body {
+  @apply text-brand-body;
+}
