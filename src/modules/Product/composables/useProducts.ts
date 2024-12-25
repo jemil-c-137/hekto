@@ -1,29 +1,26 @@
 import { onMounted, ref } from "vue";
-import { productApi } from "../api/productApi";
-import { IProduct, ProductType } from "../types";
+import { IProduct } from "../types";
+import { ApiError } from "@/api";
 
-export function useProducts(productType: ProductType) {
-    const products = ref<IProduct[]>([])
-    const topCategories = ref<IProduct[][]>([]);
-    const error = ref<string | null>(null)
+export function useProducts(apiCall: Function) {
+    const products = ref<IProduct[]>([]);
+    const error = ref<string | null>(null);
     const loading = ref<boolean>(false);
 
     onMounted(async () => {
         loading.value = true;
-        await productApi.getProducts(productType).then((data) => {
+        await apiCall().then((data: IProduct[]) => {
             products.value = data
-            topCategories.value = data.topCategories
-        }).catch((error) => {
-            error.value = error;
+        }).catch((err: string | null | ApiError) => {
+            if (err instanceof ApiError) {
+                error.value = err.message;
+            } else {
+                error.value = err;
+            }
         }).finally(() => {
             loading.value = false;
         })
-
     })
-
-    if (productType === 'topCategories') {
-        return { topCategories, error, loading }
-    }
 
     return { products, error, loading }
 }

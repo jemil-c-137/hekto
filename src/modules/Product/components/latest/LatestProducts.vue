@@ -61,10 +61,11 @@ import { useProducts } from '../../composables/useProducts'
 import LatestProductCard from './LatestProductCard.vue';
 import AlertMessage from '@/UI/AlertMessage.vue'
 import SkeletonCard from '@/UI/SkeletonCard.vue'
+import { getLatestProducts } from '../../api/productApi';
 
 const activeLatestProducts = ref<LatestProductsOptions>(LatestProductsOptions.NewArrival);
 
-const { products: latestProducts, loading, error } = useProducts('latest');
+const { products: latestProducts, loading, error } = useProducts(getLatestProducts);
 
 const setActiveLatestProduct = (value: LatestProductsOptions) => {
     loading.value = true;

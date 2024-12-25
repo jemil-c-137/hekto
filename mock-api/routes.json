@@ -1,0 +1,12 @@
+{
+    "/products/featured": "/products?featured=true&_limit=4",
+    "/products/latest": "/products?is_new=true&_sort=created_at&_order=desc&_limit=6",
+    "/products/trending": "/products?trending=true&_sort=sales_count&_order=desc&_limit=4",
+    "/products/top-categories": "/collections/4?_embed=products",
+    "/api/v1/products/category/:category": "/products?categories_like=:category",
+    "/api/v1/products/search/:query": "/products?q=:query",
+    "/api/v1/products/on-sale": "/products?sale_price_ne=null",
+    "/api/v1/collections/:slug": "/collections?slug=:slug&_embed=products",
+    "/api/v1/blog-posts": "/blog_posts?_sort=created_at&_order=desc",
+    "/api/v1/blog-posts/:slug": "/blog_posts?slug=:slug"
+  }

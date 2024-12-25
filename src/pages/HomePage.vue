@@ -3,6 +3,7 @@
     <HeroSlider />
     <section class="content-container pt-12 pb-36">
       <FeaturedProducts />
+      
       <LatestProducts />
       <FeaturesGrid />
     </section>

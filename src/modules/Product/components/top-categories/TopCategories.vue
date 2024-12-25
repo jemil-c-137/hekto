@@ -66,11 +66,30 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted, ref } from 'vue';
 import TopCategoryCard from './TopCategoryCard.vue'
-import { useProducts } from '../../composables/useProducts'
 import LoadingSpinner from '@/UI/LoadingSpinner.vue'
 import AlertMessage from '@/UI/AlertMessage.vue'
+import { getTopCategories } from '../../api/productApi';
+import { IProduct } from '../../types';
+import { ApiError } from '@/api';
 
-const { topCategories, loading, error } = useProducts('topCategories');
+const topCategories = ref<IProduct[][]>([]);
+const error = ref<string | null>(null);
+const loading = ref<boolean>(false);
 
+onMounted(async () => {
+    loading.value = true;
+    await getTopCategories().then((data: IProduct[][]) => {
+        topCategories.value = data
+    }).catch((err: string | null | ApiError) => {
+        if (err instanceof ApiError) {
+            error.value = err.message;
+        } else {
+            error.value = err;
+        }
+    }).finally(() => {
+        loading.value = false;
+    })
+})
 </script>
