@@ -1,0 +1,6 @@
+{
+  "port": 6060,
+  "watch": true,
+  "delay": 500,
+  "routes": "./routes.json"
+} 

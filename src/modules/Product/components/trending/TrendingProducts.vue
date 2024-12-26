@@ -87,7 +87,8 @@ import TrendingProductCard from './TrendingProductCard.vue'
 import { useProducts } from '../../composables/useProducts';
 import LoadingSpinner from '@/UI/LoadingSpinner.vue'
 import AlertMessage from '@/UI/AlertMessage.vue'
+import { getTrendingProducts } from '../../api/productApi';
 
-const { products: trendingProducts, loading, error } = useProducts('trending');
+const { products: trendingProducts, loading, error } = useProducts(getTrendingProducts);
 
 </script>

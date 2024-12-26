@@ -1,0 +1,17 @@
+{
+  "name": "mock-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "json-server db.json --port 6060"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^9.3.0",
+    "cors": "^2.8.5",
+    "json-server": "^1.0.0-beta.3"
+  }
+}
