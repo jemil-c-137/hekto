@@ -1,6 +1,7 @@
-import Api from "@/api"
+import { handleResponse } from "@/api"
+import { API_BASE_URL } from "@/shared/constants";
 
-export const fetchFeaturedBlogposts = async () => {
-    const res = await Api.getAllProducts()
-    return res.blogposts
+export const getBlogPosts = async () => {
+    const response = await fetch(`${API_BASE_URL}/blog_posts`);
+    return handleResponse(response);
 }

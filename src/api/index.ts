@@ -38,12 +38,6 @@ const api = {
     console.log(collection, 'collection');
     return collection;
   },
-
-  // Blog Methods
-  async getBlogPosts() {
-    const response = await fetch(`${API_BASE_URL}/blog-posts`);
-    return handleResponse(response);
-  },
 };
 
 export default api;
