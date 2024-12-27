@@ -1,3 +1,5 @@
+import { IApiResponse } from "@/api/types";
+
 export interface ProductCardProps {
     name: string
     price: string
@@ -33,3 +35,5 @@ export interface ProductResponse {
 }
 
 export type ProductType = 'featured' | 'latest' | 'trending' | 'topCategories'
+
+export interface IProductsResponse extends IApiResponse<IProduct[]> {}

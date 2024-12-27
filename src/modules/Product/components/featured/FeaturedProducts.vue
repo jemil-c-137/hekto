@@ -25,8 +25,4 @@ import { useProducts } from '../../composables/useProducts';
 import { getFeaturedProducts } from '../../api/productApi';
 
 const { products: featuredProducts, loading, error } = useProducts(getFeaturedProducts);
-
-console.log(featuredProducts, 'featuredProducts');
-console.log(loading, 'loading');
-console.log(error, 'error');
 </script>
