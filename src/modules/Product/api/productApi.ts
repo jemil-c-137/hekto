@@ -14,6 +14,7 @@ export const getFeaturedProducts = async (): Promise<IProductsResponse> => {
 export const getLatestProducts = async (): Promise<IProductsResponse> => {
     const response = await fetch(`${productsEndpoint}/latest`);
     const collection = await handleResponse(response);
+    console.log('latest collection', collection);
     return collection;
 }
 
@@ -26,7 +27,6 @@ export const getTrendingProducts = async (): Promise<IProductsResponse>   => {
 export const getTopCategories = async (): Promise<IProductsResponse[]> => {
     const response = await fetch(`${productsEndpoint}/top-categories`);
     const collection = await handleResponse(response);
-    console.log(collection, 'collection');
 
     const itemsPerChunk = 4;
     const result = collection.reduce((resultArray: IProduct[][], item: IProduct, index: number) => {
@@ -40,3 +40,8 @@ export const getTopCategories = async (): Promise<IProductsResponse[]> => {
 
     return result;
 }
+
+export const getProduct = async (id: number) => {
+  const response = await fetch(`${API_BASE_URL}/products/${id}`);
+  return handleResponse(response);
+};
