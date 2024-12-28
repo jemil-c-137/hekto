@@ -1,28 +1,30 @@
 import { handleResponse } from '@/api'
 import { API_BASE_URL } from '@/shared/constants';
-import { IProduct } from '../types';
+import { IProduct, IProductsResponse } from '../types';
 
-export const getFeaturedProducts = async () => {
-    const response = await fetch(`${API_BASE_URL}/products?tags=featured`);
+const productsEndpoint = `${API_BASE_URL}/products`;
+
+export const getFeaturedProducts = async (): Promise<IProductsResponse> => {
+    const response = await fetch(`${productsEndpoint}/featured`);
     const collection = await handleResponse(response);
     return collection;
 }
 
 
-export const getLatestProducts = async () => {
-    const response = await fetch(`${API_BASE_URL}/products?tags=latest`);
+export const getLatestProducts = async (): Promise<IProductsResponse> => {
+    const response = await fetch(`${productsEndpoint}/latest`);
     const collection = await handleResponse(response);
     return collection;
 }
 
-export const getTrendingProducts = async () => {
-    const response = await fetch(`${API_BASE_URL}/products?tags=trending`);
+export const getTrendingProducts = async (): Promise<IProductsResponse>   => {
+    const response = await fetch(`${productsEndpoint}/trending`);
     const collection = await handleResponse(response);
     return collection;
 }
 
-export const getTopCategories = async (): Promise<IProduct[][]> => {
-    const response = await fetch(`${API_BASE_URL}/products?tags=top-categories`);
+export const getTopCategories = async (): Promise<IProductsResponse[]> => {
+    const response = await fetch(`${productsEndpoint}/top-categories`);
     const collection = await handleResponse(response);
     console.log(collection, 'collection');
 

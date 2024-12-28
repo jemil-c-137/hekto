@@ -1,4 +1,4 @@
-export default (req, res, next) => {
+module.exports = (req, res, next) => {
     // Add CORS headers
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
@@ -12,5 +12,5 @@ export default (req, res, next) => {
     // Add artificial delay to simulate real-world conditions
     setTimeout(() => {
       next();
-    }, 200);
+    }, 500);
   };
