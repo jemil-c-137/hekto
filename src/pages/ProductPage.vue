@@ -1,25 +1,42 @@
 <template>
-  <h1 class="text-4xl text-center p-24">🚧Page {{ productName }} is under construction🚧</h1>
+  <main class="content-container">
+    <div v-if="loading" class="min-h-lg">
+      <LoadingSpinner />
+    </div>
+    <div v-else-if="product === null" class="flex">
+        <h1>PRODUCT NOT FOUND</h1>
+    </div>
+    <template v-else>
+      <ProductDetail class="my-32" :product="product" />
+    </template>
+  </main>
 </template>
 
 <script setup lang="ts">
-import Api from '@/api'
+import { IProduct } from '@/modules/Product';
+import { getProduct } from '@/modules/Product/api/productApi';
+import ProductDetail from '@/modules/Product/components/product-detail/ProductDetail.vue';
+import LoadingSpinner from '@/UI/LoadingSpinner.vue';
 import { onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 
-const route = useRoute()
+const route = useRoute();
+const product = ref<IProduct | null>(null);
+const loading = ref<boolean>(false);
 
-const productName = ref<string>()
-
-onMounted(() => {
+onMounted( async () => {
   const id = route.params.id
   console.log(id, 'id')
-  if (id) {
-    Api.getProductDetails(+id)
-      .then((res) => {
-        productName.value = res.name
-      })
-      .catch((e) => console.log('error', e))
+  if (typeof id === 'string') {
+    loading.value = true;
+    await getProduct(+id).then(res => {
+      console.log(res, 'res');
+      product.value = res;
+    }).catch(e => {
+      console.log(e, 'error');
+    }).finally(() => {
+      loading.value = false;
+    })
   }
 })
 </script>

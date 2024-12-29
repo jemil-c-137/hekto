@@ -28,3 +28,7 @@ body {
 .logo-text {
   @apply font-josefin text-4xl text-brand-heading font-bold
 }
+
+.badge {
+  @apply inline-flex items-center justify-center px-2 py-0.5 rounded-full text-xs font-semibold text-white bg-brand-highlight opacity-70;
+}

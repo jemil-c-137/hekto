@@ -21,6 +21,7 @@ export default {
         'brand-heading': '#0D0E43', // dark-blue
         'brand-body': '#151875', // navy-blue
         'brand-muted': '#8A8FB9', // pale-purple
+        'brand-semi': '#A9ACC6',
         
         // Background colors
         'brand-bg-primary': '#F2F0FF', // light

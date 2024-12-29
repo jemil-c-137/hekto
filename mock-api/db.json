@@ -90,7 +90,7 @@
         "tags": "latest"
       },
       {
-        "name": "Armchair 1",
+        "name": "Playwood Armchair",
         "code": null,
         "price": "$42.00",
         "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair22.png?raw=true",
@@ -99,11 +99,11 @@
         "rating": 3,
         "reviewsCount": 20,
         "color": {
-          "name": "blakc",
+          "name": "black",
           "hexValue": "#000"
         },
-        "description": "lorem",
-        "categories": ["chair"],
+        "description": "Experience elegance and comfort with our Playwood Armchair, a perfect blend of modern design and timeless craftsmanship. Made with high-quality, eco-friendly plywood, this chair boasts a smooth finish that complements any interior.",
+        "categories": ["Chair", "Furniture"],
         "tags": "latest"
       },
       {
