@@ -27,11 +27,6 @@ const api = {
     return handleResponse(response);
   },
 
-  async getProduct(id: number) {
-    const response = await fetch(`${API_BASE_URL}/products/${id}`);
-    return handleResponse(response);
-  },
-
   async getTopCategories() {
     const response = await fetch(`${API_BASE_URL}/products?tags=top-categories`);
     const collection = await handleResponse(response);

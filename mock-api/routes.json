@@ -1,6 +1,6 @@
 {
     "/products/featured": "/products?tags=featured&_limit=4",
-    "/products/latest": "/products?tags=latest_limit=6",
+    "/products/latest": "/products?tags=latest&_limit=6",
     "/products/trending": "/products?tags=trending&_limit=4",
     "/products/top-categories": "/products?tags=top-categories"
   }

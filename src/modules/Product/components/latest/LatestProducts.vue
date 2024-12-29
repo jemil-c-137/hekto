@@ -67,6 +67,8 @@ const activeLatestProducts = ref<LatestProductsOptions>(LatestProductsOptions.Ne
 
 const { products: latestProducts, loading, error } = useProducts(getLatestProducts);
 
+console.log(latestProducts, 'latestProducts');
+
 const setActiveLatestProduct = (value: LatestProductsOptions) => {
     loading.value = true;
     setTimeout(() => {
