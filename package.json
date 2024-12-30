@@ -20,6 +20,7 @@
     "vue-router": "^4.2.0"
   },
   "devDependencies": {
+    "@iconify/vue": "^4.2.0",
     "@rushstack/eslint-patch": "^1.2.0",
     "@tsconfig/node18": "^2.0.1",
     "@types/node": "^18.17.5",
