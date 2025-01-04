@@ -69,7 +69,68 @@
 
                 <!-- REVIEWS -->
                 <div v-if="activeTab === 'Reviews'" class="mt-12">
-                    REVIEWS
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6">Customer Reviews</h2>
+
+    <!-- Review Cards -->
+                        <div class="space-y-4">
+                        <div
+                            v-for="(review, index) in displayedReviews"
+                            :key="index"
+                            class="bg-white shadow-md rounded-lg p-4"
+                        >
+                            <div class="flex items-center justify-between mb-2">
+                            <div class="font-semibold text-gray-900">{{ review.name }}</div>
+                            <!-- Star Ratings -->
+                            <div class="flex items-center">
+                                <template v-for="i in 5" :key="i">
+                                <svg
+                                    v-if="i <= review.rating"
+                                    class="h-5 w-5 text-yellow-500"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                    d="M12 .587l3.668 7.435 8.207 1.192-5.938 5.79 1.4 8.173L12 18.896l-7.337 3.871 1.4-8.173-5.938-5.79 8.207-1.192z"
+                                    />
+                                </svg>
+                                <svg
+                                    v-else
+                                    class="h-5 w-5 text-gray-300"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                    d="M12 .587l3.668 7.435 8.207 1.192-5.938 5.79 1.4 8.173L12 18.896l-7.337 3.871 1.4-8.173-5.938-5.79 8.207-1.192z"
+                                    />
+                                </svg>
+                                </template>
+                            </div>
+                            </div>
+                            <p class="text-gray-700">{{ review.comment }}</p>
+                        </div>
+                        </div>
+
+    <!-- Pagination -->
+                        <div class="flex justify-end mt-6">
+                        <button
+                            @click="prevPage"
+                            :disabled="currentPage === 1"
+                            class="px-4 py-2 mr-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-100 disabled:opacity-50"
+                        >
+                            Previous
+                        </button>
+                        <button
+                            @click="nextPage"
+                            :disabled="currentPage === totalPages"
+                            class="px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-100 disabled:opacity-50"
+                        >
+                            Next
+                        </button>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -90,7 +151,7 @@ import BaseButton from '@/UI/BaseButton.vue';
 import BaseBadge from '@/UI/BaseBadge.vue';
 import { IProduct } from '../../types';
 import PriceTag from '../PriceTag.vue';
-import { ref } from 'vue';
+import { computed, ref } from 'vue';
 
 type Tabs = 'Description' | 'Additional info' | 'Reviews' | 'Video';
 const tabs: Tabs[] = ['Description', 'Additional info', 'Reviews', 'Video'];
@@ -98,4 +159,31 @@ const tabs: Tabs[] = ['Description', 'Additional info', 'Reviews', 'Video'];
 defineProps<{ product: IProduct }>()
 
 const activeTab = ref<Tabs>('Description');
+const currentPage = ref<number>(1);
+const reviewsPerPage = ref<number>(3);
+const totalPages = computed(() => {
+    return Math.ceil(reviews.value.length / reviewsPerPage.value);
+})
+
+const reviews = ref([
+        { name: "Alice", rating: 5, comment: "Absolutely amazing product!" },
+        { name: "John", rating: 4, comment: "Great quality, but delivery was slow." },
+        { name: "Emily", rating: 3, comment: "Good, but could be better." },
+        { name: "Michael", rating: 5, comment: "Exceeded my expectations!" },
+        { name: "Sophia", rating: 4, comment: "Looks great in my living room." },
+    ])
+
+const displayedReviews = computed(() => {
+    const start = (currentPage.value - 1) * reviewsPerPage.value;
+    const end = start + reviewsPerPage.value;
+    return reviews.value.slice(start, end);
+})
+
+const prevPage = () => {
+    if (currentPage.value > 1) currentPage.value--;
+}
+
+const nextPage = () => {
+    if (currentPage.value < totalPages.value) currentPage.value++;
+}
 </script>
