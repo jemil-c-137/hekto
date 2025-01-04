@@ -1,5 +1,5 @@
 <template>
-  <main class="content-container">
+  <main>
     <div v-if="loading" class="min-h-lg">
       <LoadingSpinner />
     </div>
