@@ -5,7 +5,9 @@
         </div>
         <div class="w-7/12">
             <h1 class="mt-12 product-title">{{ product.name }}</h1>
-            <span class="mt-3">{{ product.rating }}</span>
+            <span class="mt-3 flex gap-1">
+                <Icon v-for="star in 5" :icon="(star - 1) >= product.rating ? 'bi:star' : 'bi-star-fill'" color="gold" :key="star" />
+            </span>
             <div class="flex mt-3">
                 <PriceTag :price="product.price" :discounted-price="product.discountedPrice" />
             </div>
@@ -31,9 +33,9 @@
             </div>
         </div>
     </div>
-    <div class="bg-brand-bg-primary mt-48 pt-24 mb-48 w-full">
+    <div class="bg-brand-bg-primary mt-32 py-24 mb-48 w-full">
         <div class="content-container">
-            <ul class="flex text-lg font-semibold gap-48">
+            <ul class="flex text-xl font-semibold gap-48">
                 <li v-for="tab in tabs"
                     :key="tab"
                     class="cursor-pointer hover:text-brand-interactive"
@@ -52,19 +54,36 @@
                     </p>
                 </div>
 
-
                 <!-- ADDITIONAL INFO -->
-                <div v-if="activeTab === 'Additional info'" class="mt-12">
-                    <ul>
-                        <li><strong>Material: </strong> Premium solid wood frame with foam cushioning</li>
-                        <li><strong>Dimensions: </strong> 85cm (H) x 75cm (W) x 70cm (D)</li>
-                        <li><strong>Weight Capacity: </strong> Up to 120kg</li> 
-                        <li><strong>Color Options: </strong> Natural Oak, Walnut, Black Finish</li>
-                        <li><strong>Assembly: </strong> Partial assembly required (tools included)</li> 
-                        <li><strong>Care Instructions: </strong> Clean with a damp cloth; avoid abrasive cleaners</li>
-
-                    </ul>
+                <div v-if="activeTab === 'Additional info'" class="mt-12 bg-brand-bg-gray p-6 rounded-lg shadow-md">
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <strong class="w-40 text-gray-700 font-medium">Material:</strong>
+                        <span class="text-gray-600">Premium solid wood frame with foam cushioning</span>
+                    </li>
+                    <li class="flex items-start">
+                    <strong class="w-40 text-gray-700 font-medium">Dimensions:</strong>
+                    <span class="text-gray-600">85cm (H) x 75cm (W) x 70cm (D)</span>
+                    </li>
+                    <li class="flex items-start">
+                    <strong class="w-40 text-gray-700 font-medium">Weight Capacity:</strong>
+                    <span class="text-gray-600">Up to 120kg</span>
+                    </li>
+                    <li class="flex items-start">
+                    <strong class="w-40 text-gray-700 font-medium">Color Options:</strong>
+                    <span class="text-gray-600">Natural Oak, Walnut, Black Finish</span>
+                    </li>
+                    <li class="flex items-start">
+                    <strong class="w-40 text-gray-700 font-medium">Assembly:</strong>
+                    <span class="text-gray-600">Partial assembly required (tools included)</span>
+                    </li>
+                    <li class="flex items-start">
+                    <strong class="w-40 text-gray-700 font-medium">Care Instructions:</strong>
+                    <span class="text-gray-600">Clean with a damp cloth; avoid abrasive cleaners</span>
+                    </li>
+                </ul>
                 </div>
+
 
 
                 <!-- REVIEWS -->
@@ -72,7 +91,7 @@
                     <div class="p-6">
                         <h2 class="text-2xl font-bold text-gray-800 mb-6">Customer Reviews</h2>
 
-    <!-- Review Cards -->
+                        <!-- Review Cards -->
                         <div class="space-y-4">
                         <div
                             v-for="(review, index) in displayedReviews"
@@ -113,7 +132,7 @@
                         </div>
                         </div>
 
-    <!-- Pagination -->
+                        <!-- Pagination -->
                         <div class="flex justify-end mt-6">
                         <button
                             @click="prevPage"
@@ -136,7 +155,26 @@
 
                 <!-- VIDEOS -->
                 <div v-if="activeTab === 'Video'" class="mt-12">
-                    VIDEOS
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div v-for="(video, index) in videos"
+                            :key="index"
+                            class="bg-white shadow-md rounded-lg overflow-hidden">
+                            <div class="aspect-w-16 aspect-h-9">
+                                <iframe
+                                    :src="video.url"
+                                    title="Video Testimonial"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                    class="w-full h-full">
+                                </iframe>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">{{ video.title }}</h3>
+                                <p class="text-gray-700 text-sm">{{ video.description }}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -171,7 +209,30 @@ const reviews = ref([
         { name: "Emily", rating: 3, comment: "Good, but could be better." },
         { name: "Michael", rating: 5, comment: "Exceeded my expectations!" },
         { name: "Sophia", rating: 4, comment: "Looks great in my living room." },
-    ])
+])
+
+const videos = [
+        {
+          title: "Product Overview",
+          url: "https://www.youtube.com/embed/xyz123",
+          description: "A detailed look at the features and benefits of the Playwood Armchair.",
+        },
+        {
+          title: "Customer Testimonial - Alice",
+          url: "https://www.youtube.com/embed/abc456",
+          description: "Alice shares her experience with the Playwood Armchair.",
+        },
+        {
+          title: "Setting Up Your Chair",
+          url: "https://www.youtube.com/embed/def789",
+          description: "A step-by-step guide to assembling your armchair.",
+        },
+        {
+          title: "Styling Ideas",
+          url: "https://www.youtube.com/embed/ghi101",
+          description: "Creative ways to style the Playwood Armchair in your living room.",
+        },
+];
 
 const displayedReviews = computed(() => {
     const start = (currentPage.value - 1) * reviewsPerPage.value;
