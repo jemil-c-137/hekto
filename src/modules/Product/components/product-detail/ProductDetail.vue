@@ -1,5 +1,6 @@
 <template>
-    <div class="content-container flex bg-white shadow-2xl max-w-7xl p-4 font-josefin">
+    <div class="mt-32">
+        <div class="content-container flex bg-white shadow-2xl max-w-7xl p-4 font-josefin">
         <div class="w-5/12 flex justify-center items-center">
             <img :src="product.imageUrl" alt="">
         </div>
@@ -49,9 +50,13 @@
                 <!-- DESCRIPTION -->
                 <div v-if="activeTab === 'Description'" class="mt-12">
                     
-                    <p>
-                        Experience the perfect blend of elegance and comfort with the Playwood Armchair. Crafted from high-quality materials, this chair combines a sleek design with ergonomic support to enhance your living space. Ideal for modern interiors, it features smooth wood finishes and a cushioned seat for hours of relaxation. Whether you’re reading, working, or entertaining, the Playwood Armchair adapts seamlessly to your lifestyle.
+                    <p class="text-gray-600 leading-relaxed text-lg mt-4">
+                        Experience the perfect blend of elegance and comfort with the <span class="font-semibold text-gray-800">Playwood Armchair</span>. 
+                        Crafted from high-quality materials, this chair combines a sleek design with ergonomic support to enhance your living space. 
+                        Ideal for modern interiors, it features smooth wood finishes and a cushioned seat for hours of relaxation. 
+                        Whether you’re reading, working, or entertaining, the Playwood Armchair adapts seamlessly to your lifestyle.
                     </p>
+
                 </div>
 
                 <!-- ADDITIONAL INFO -->
@@ -179,6 +184,7 @@
             </div>
         </div>
 
+    </div>
     </div>
 </template>
 
