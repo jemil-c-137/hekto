@@ -42,6 +42,6 @@ export const getTopCategories = async (): Promise<IProductsResponse[]> => {
 }
 
 export const getProduct = async (id: number) => {
-  const response = await fetch(`${API_BASE_URL}/products/${id}`);
+  const response = await fetch(`${API_BASE_URL}/products/${id}?_expand=relatedProducts`);
   return handleResponse(response);
 };
