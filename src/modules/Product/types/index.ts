@@ -24,7 +24,12 @@ export interface IProduct {
     }
     description: string
     categories: string[]
-    tags: string[] | null
+    tags: string[] | null,
+    videos: {
+        description: string,
+        url: string,
+        title: string,
+    }[]
 }
 
 export interface ProductResponse {

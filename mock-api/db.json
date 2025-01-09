@@ -19,7 +19,30 @@
         "categories": ["chair"],
         "tags": "featured",
         "created_at": "2024-03-20T10:00:00Z",
-        "updated_at": "2024-03-20T10:00:00Z"
+        "updated_at": "2024-03-20T10:00:00Z",
+        "relatedProducts": [1, 2],
+        "videos": [
+        {
+          "title": "Product Overview",
+          "url": "https://www.youtube.com/embed/xyz123",
+          "description": "A detailed look at the features and benefits of the Playwood Armchair."
+        },
+        {
+          "title": "Customer Testimonial - Alice",
+          "url": "https://www.youtube.com/embed/abc456",
+          "description": "Alice shares her experience with the Playwood Armchair."
+        },
+        {
+          "title": "Setting Up Your Chair",
+          "url": "https://www.youtube.com/embed/def789",
+          "description": "A step-by-step guide to assembling your armchair."
+        },
+        {
+          "title": "Styling Ideas",
+          "url": "https://www.youtube.com/embed/ghi101",
+          "description": "Creative ways to style the Playwood Armchair in your living room."
+        }
+        ]
       },
       {
         "id": 2,
@@ -36,7 +59,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "featured"
+        "tags": "featured",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Chair 3",
@@ -53,7 +100,29 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "featured"
+        "tags": "featured",
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
       },
       {
         "name": "Chair 4",
@@ -70,7 +139,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "featured"
+        "tags": "featured",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Chair 5",
@@ -87,7 +180,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "latest"
+        "tags": "latest",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Playwood Armchair",
@@ -104,14 +221,37 @@
         },
         "description": "Experience elegance and comfort with our Playwood Armchair, a perfect blend of modern design and timeless craftsmanship. Made with high-quality, eco-friendly plywood, this chair boasts a smooth finish that complements any interior.",
         "categories": ["Chair", "Furniture"],
-        "tags": "latest"
+        "tags": "latest",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
       },
       {
         "name": "Comfort Handy Craft",
         "code": null,
         "price": "$42.00",
         "imageUrl": "https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair25.png?raw=true",
-        "id": 7,
+        "id": 71,
         "discountedPrice": null,
         "rating": 3,
         "reviewsCount": 20,
@@ -121,7 +261,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "latest"
+        "tags": "latest",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Comfort Handy Craft",
@@ -138,7 +302,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "latest"
+        "tags": "latest",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Comfort Handy Craft",
@@ -155,7 +343,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "latest"
+        "tags": "latest",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Cantilever chair",
@@ -172,7 +384,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "latest"
+        "tags": "latest",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Cantilever chair",
@@ -189,7 +425,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "trending"
+        "tags": "trending",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Cantilever chair",
@@ -206,7 +466,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "trending"
+        "tags": "trending",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Cantilever chair",
@@ -223,7 +507,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "trending"
+        "tags": "trending",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Mini LCW Chair",
@@ -240,7 +548,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "top-categories"
+        "tags": "top-categories",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Mini LCW Chair",
@@ -257,7 +589,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "top-categories"
+        "tags": "top-categories",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Mini LCW Chair",
@@ -274,7 +630,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "top-categories"
+        "tags": "top-categories",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Mini LCW Chair",
@@ -291,7 +671,31 @@
         "description": "lorem",
         "categories": ["chair"],
         "tags": "top-categories",
-        "discountedPrice": null
+        "discountedPrice": null,
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Cantilever chair",
@@ -308,7 +712,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "top-categories"
+        "tags": "top-categories",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Cantilever chair",
@@ -325,7 +753,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "top-categories"
+        "tags": "top-categories",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Cantilever chair",
@@ -342,7 +794,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "top-categories"
+        "tags": "top-categories",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Cantilever chair",
@@ -359,7 +835,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "top-categories"
+        "tags": "top-categories",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Comfort Handy Craft",
@@ -376,7 +876,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "top-categories"
+        "tags": "top-categories",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Comfort Handy Craft",
@@ -393,7 +917,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "top-categories"
+        "tags": "top-categories",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Comfort Handy Craft",
@@ -410,7 +958,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "top-categories"
+        "tags": "top-categories",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       },
       {
         "name": "Comfort Handy Craft",
@@ -427,7 +999,31 @@
         },
         "description": "lorem",
         "categories": ["chair"],
-        "tags": "top-categories"
+        "tags": "top-categories",
+        "relatedProducts": [1, 2],
+        "videos": [
+          {
+            "title": "Product Overview",
+            "url": "https://www.youtube.com/embed/xyz123",
+            "description": "A detailed look at the features and benefits of the Playwood Armchair."
+          },
+          {
+            "title": "Customer Testimonial - Alice",
+            "url": "https://www.youtube.com/embed/abc456",
+            "description": "Alice shares her experience with the Playwood Armchair."
+          },
+          {
+            "title": "Setting Up Your Chair",
+            "url": "https://www.youtube.com/embed/def789",
+            "description": "A step-by-step guide to assembling your Armchair."
+          },
+          {
+            "title": "Styling Ideas",
+            "url": "https://www.youtube.com/embed/ghi101",
+            "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+          ]
+
       }
     ],
     "collections": [

@@ -161,7 +161,7 @@
                     <!-- VIDEOS -->
                     <div v-if="activeTab === 'Video'" class="mt-12">
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <div v-for="(video, index) in videos"
+                            <div v-for="(video, index) in product.videos"
                                 :key="index"
                                 class="bg-white shadow-md rounded-lg overflow-hidden">
                                 <div class="aspect-w-16 aspect-h-9">
@@ -188,8 +188,8 @@
         <div class="content-container">
             <h4 class="text-3xl font-bold">Related products</h4>
             <ul class="flex gap-8 mt-12">
-                <li v-for="product in relatedProducts" :key="product.title" class="shadow-xl p-4 cursor-pointer">
-                    <img class="rounded" :src="product.img" alt="">
+                <li v-for="product in relatedProducts" :key="product.title" class="shadow-xl p-4 cursor-pointer w-full">
+                    <img class="rounded h-[200px] mx-auto my-0" :src="product.img" alt="">
                     <div class="flex mt-4 justify-between items-center">
                         <p class="text-lg">{{ product.title }}</p>
                         <div class="flex">
@@ -220,6 +220,7 @@ defineProps<{ product: IProduct }>()
 const activeTab = ref<Tabs>('Description');
 const currentPage = ref<number>(1);
 const reviewsPerPage = ref<number>(3);
+
 const totalPages = computed(() => {
     return Math.ceil(reviews.value.length / reviewsPerPage.value);
 })
@@ -232,56 +233,34 @@ const reviews = ref([
         { name: "Sophia", rating: 4, comment: "Looks great in my living room." },
 ])
 
-const videos = [
-        {
-          title: "Product Overview",
-          url: "https://www.youtube.com/embed/xyz123",
-          description: "A detailed look at the features and benefits of the Playwood Armchair.",
-        },
-        {
-          title: "Customer Testimonial - Alice",
-          url: "https://www.youtube.com/embed/abc456",
-          description: "Alice shares her experience with the Playwood Armchair.",
-        },
-        {
-          title: "Setting Up Your Chair",
-          url: "https://www.youtube.com/embed/def789",
-          description: "A step-by-step guide to assembling your armchair.",
-        },
-        {
-          title: "Styling Ideas",
-          url: "https://www.youtube.com/embed/ghi101",
-          description: "Creative ways to style the Playwood Armchair in your living room.",
-        },
-];
 
 const relatedProducts = [
     {
         img: 'https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair2.png?raw=true',
-        title: 'product 1',
+        title: 'Chair 1',
         rate: 4,
         price: '$32',
         discountedPrice: '$25'
     },
     {
-        img: 'https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair2.png?raw=true',
-        title: 'product 2',
+        img: 'https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair1.png?raw=true',
+        title: 'Chair 2',
         rate: 4,
-        price: '$32',
-        discountedPrice: '$25'
+        price: '$35',
+        discountedPrice: '$27'
     },
     {
-        img: 'https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair2.png?raw=true',
-        title: 'product 3',
+        img: 'https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair3.png?raw=true',
+        title: 'Chair 3',
         rate: 4,
-        price: '$32',
-        discountedPrice: '$25'
+        price: '$30',
+        discountedPrice: '$22'
     },
     {
-        img: 'https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair2.png?raw=true',
-        title: 'product 4',
+        img: 'https://github.com/jemil-c-137/hekto/blob/gh-pages/assets/chair4.png?raw=true',
+        title: 'Chair 4',
         rate: 4,
-        price: '$32',
+        price: '$42',
         discountedPrice: '$25'
     }
 ]
