@@ -29,6 +29,10 @@ export interface IProduct {
         description: string,
         url: string,
         title: string,
+    }[],
+    productSpecifications: {
+        type: string,
+        value: string,
     }[]
 }
 

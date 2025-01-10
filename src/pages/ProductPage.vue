@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div v-if="loading" class="min-h-lg">
+    <div v-if="loading" class="min-h-screen flex items-center justify-center">
       <LoadingSpinner />
     </div>
     <div v-else-if="product === null" class="flex">

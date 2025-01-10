@@ -61,36 +61,13 @@
 
                     <!-- ADDITIONAL INFO -->
                     <div v-if="activeTab === 'Additional info'" class="mt-12 bg-brand-bg-gray p-6 rounded-lg shadow-md">
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <strong class="w-40 text-gray-700 font-medium">Material:</strong>
-                            <span class="text-gray-600">Premium solid wood frame with foam cushioning</span>
-                        </li>
-                        <li class="flex items-start">
-                        <strong class="w-40 text-gray-700 font-medium">Dimensions:</strong>
-                        <span class="text-gray-600">85cm (H) x 75cm (W) x 70cm (D)</span>
-                        </li>
-                        <li class="flex items-start">
-                        <strong class="w-40 text-gray-700 font-medium">Weight Capacity:</strong>
-                        <span class="text-gray-600">Up to 120kg</span>
-                        </li>
-                        <li class="flex items-start">
-                        <strong class="w-40 text-gray-700 font-medium">Color Options:</strong>
-                        <span class="text-gray-600">Natural Oak, Walnut, Black Finish</span>
-                        </li>
-                        <li class="flex items-start">
-                        <strong class="w-40 text-gray-700 font-medium">Assembly:</strong>
-                        <span class="text-gray-600">Partial assembly required (tools included)</span>
-                        </li>
-                        <li class="flex items-start">
-                        <strong class="w-40 text-gray-700 font-medium">Care Instructions:</strong>
-                        <span class="text-gray-600">Clean with a damp cloth; avoid abrasive cleaners</span>
-                        </li>
-                    </ul>
+                        <ul class="space-y-4">
+                            <li v-for="specification in product.productSpecifications" :key="specification.type" class="flex items-start">
+                                <strong class="w-40 text-gray-700 font-medium">{{ specification.type }}</strong>
+                                <span class="text-gray-600">{{ specification.value }}</span>
+                            </li>
+                        </ul>
                     </div>
-
-
-
                     <!-- REVIEWS -->
                     <div v-if="activeTab === 'Reviews'" class="mt-12">
                         <div class="p-6">
@@ -163,7 +140,7 @@
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div v-for="(video, index) in product.videos"
                                 :key="index"
-                                class="bg-white shadow-md rounded-lg overflow-hidden">
+                                class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-2xl">
                                 <div class="aspect-w-16 aspect-h-9">
                                     <iframe
                                         :src="video.url"
@@ -188,7 +165,7 @@
         <div class="content-container">
             <h4 class="text-3xl font-bold">Related products</h4>
             <ul class="flex gap-8 mt-12">
-                <li v-for="product in relatedProducts" :key="product.title" class="shadow-xl p-4 cursor-pointer w-full">
+                <li v-for="product in relatedProducts" :key="product.title" class="shadow-xl hover:shadow-2xl p-4 cursor-pointer w-full">
                     <img class="rounded h-[200px] mx-auto my-0" :src="product.img" alt="">
                     <div class="flex mt-4 justify-between items-center">
                         <p class="text-lg">{{ product.title }}</p>
