@@ -68,7 +68,34 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
-        ]
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
+        ] 
       },
       {
         "id": 2,
@@ -134,8 +161,34 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
-
       },
       {
         "name": "Chair 3",
@@ -174,7 +227,7 @@
             "url": "https://www.youtube.com/embed/ghi101",
             "description": "Creative ways to style the Playwood Armchair in your living room."
           }
-          ],
+        ],
         "productSpecifications": [
             {
               "type": "Material",
@@ -200,7 +253,34 @@
               "type": "Care Instructions:",
               "value": "Clean with a damp cloth; avoid abrasive cleaners"
             }
-          ]
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
+        ]
       },
       {
         "name": "Chair 4",
@@ -266,8 +346,34 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
-
       },
       {
         "name": "Chair 5",
@@ -333,8 +439,34 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
-
       },
       {
         "name": "Playwood Armchair",
@@ -349,7 +481,7 @@
           "name": "black",
           "hexValue": "#000"
         },
-        "description": "Experience elegance and comfort with our Playwood Armchair, a perfect blend of modern design and timeless craftsmanship. Made with high-quality, eco-friendly plywood, this chair boasts a smooth finish that complements any interior.",
+        "description": "Experience the perfect blend of elegance and comfort with the Playwood Armchair. Crafted from high-quality materials, this chair combines a sleek design with ergonomic support to enhance your living space. Ideal for modern interiors, it features smooth wood finishes and a cushioned seat for hours of relaxation. Whether you're reading, working, or entertaining, the Playwood Armchair adapts seamlessly to your lifestyle.",
         "categories": ["Chair", "Furniture"],
         "tags": "latest",
         "relatedProducts": [1, 2],
@@ -399,6 +531,33 @@
           {
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
+          }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
           }
         ]
       },
@@ -466,8 +625,34 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
-
       },
       {
         "name": "Comfort Handy Craft",
@@ -533,8 +718,34 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
-
       },
       {
         "name": "Comfort Handy Craft",
@@ -600,8 +811,34 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
-
       },
       {
         "name": "Cantilever chair",
@@ -667,8 +904,34 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
-
       },
       {
         "name": "Cantilever chair",
@@ -734,8 +997,34 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
-
       },
       {
         "name": "Cantilever chair",
@@ -801,8 +1090,34 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
-
       },
       {
         "name": "Cantilever chair",
@@ -868,8 +1183,34 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
-
       },
       {
         "name": "Mini LCW Chair",
@@ -935,8 +1276,34 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
-
       },
       {
         "name": "Mini LCW Chair",
@@ -1002,8 +1369,34 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
-
       },
       {
         "name": "Mini LCW Chair",
@@ -1069,8 +1462,34 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
-
       },
       {
         "name": "Mini LCW Chair",
@@ -1136,8 +1555,34 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
-
       },
       {
         "name": "Cantilever chair",
@@ -1202,6 +1647,33 @@
           {
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
+          }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
           }
         ]
       },
@@ -1269,6 +1741,33 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
       },
       {
@@ -1308,6 +1807,33 @@
             "title": "Styling Ideas",
             "url": "https://www.youtube.com/embed/ghi101",
             "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
           }
         ]
       },
@@ -1375,8 +1901,34 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
-
       },
       {
         "name": "Comfort Handy Craft",
@@ -1442,6 +1994,33 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
       },
       {
@@ -1481,6 +2060,59 @@
             "title": "Styling Ideas",
             "url": "https://www.youtube.com/embed/ghi101",
             "description": "Creative ways to style the Playwood Armchair in your living room."
+          }
+        ],
+        "productSpecifications": [
+          {
+            "type": "Material",
+            "value": "Premium solid wood frame with foam cushioning"
+          },
+          {
+            "type": "Dimensions",
+            "value": "85cm (H) x 75cm (W) x 70cm (D)"
+          },
+          {
+            "type": "Weight Capacity:",
+            "value": "Up to 120kg"
+          },
+          {
+            "type": "Color Options",
+            "value": "Natural Oak, Walnut, Black Finish"
+          },
+          {
+            "type": "Assembly",
+            "value": "Partial assembly required (tools included)"
+          },
+          {
+            "type": "Care Instructions:",
+            "value": "Clean with a damp cloth; avoid abrasive cleaners"
+          }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
           }
         ]
       },
@@ -1548,6 +2180,33 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
       },
       {
@@ -1614,8 +2273,34 @@
             "type": "Care Instructions:",
             "value": "Clean with a damp cloth; avoid abrasive cleaners"
           }
+        ],
+        "reviews": [
+          {
+            "author": "Alice",
+            "comment": "Absolutely amazing product!",
+            "rate": 5
+          },
+          {
+            "author": "John",
+            "comment": "Great quality, but delivery was slow.",
+            "rate": 4
+          },
+          {
+            "author": "Emily",
+            "comment": "Good, but could be better.",
+            "rate": 3
+          },
+          {
+            "author": "Michael",
+            "comment": "Exceeded my expectations!",
+            "rate": 5
+          },
+          {
+            "author": "Sophia",
+            "comment": "Looks great in my living room.",
+            "rate": 4
+          }
         ]
-
       }
     ],
     "collections": [
