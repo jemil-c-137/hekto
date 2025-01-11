@@ -19,20 +19,25 @@ export interface IProduct {
     rating: number
     reviewsCount: number
     color: {
-        name: string,
+        name: string
         hexValue: string
     }
     description: string
     categories: string[]
-    tags: string[] | null,
+    tags: string[] | null
     videos: {
-        description: string,
-        url: string,
-        title: string,
-    }[],
+        description: string
+        url: string
+        title: string
+    }[]
     productSpecifications: {
-        type: string,
-        value: string,
+        type: string
+        value: string
+    }[]
+    reviews: {
+        author: string
+        rate: number
+        comment: string
     }[]
 }
 
