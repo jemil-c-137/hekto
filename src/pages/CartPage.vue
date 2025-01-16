@@ -6,8 +6,11 @@
         <div v-else>
             <div class="content-container grid grid-cols-8 gap-8">
                 <div class="col-span-5 h-[300px] bg-black"></div>
-                <div class="col-start-6 col-span-8 h-[300px]">
-                    <p class="text-center font-josefin text-xl mb-6">Cart totals</p>
+                <div class="col-start-6 col-span-8">
+                    <p class="text-center font-josefin text-xl mb-8">Order Summary</p>
+                    <ShippingAddress />
+
+                    <p class="text-center font-josefin text-lg mb-6">Cart totals</p>
                     <div class="bg-brand-bg-gray p-6">
                         <div class="mb-4 flex justify-between relative after:absolute after:h-[2px] after:bg-brand-decorative after:top-6 after:w-full">
                             <span class="text-md font-semibold">Subtotals</span>
@@ -26,7 +29,6 @@
                         </BaseButton>
                     </div>
 
-                    <p class="text-center font-josefin text-xl mb-6">Calculate Shipping</p>
                 </div>
             </div>
         </div>
@@ -37,6 +39,7 @@
 import { ref } from 'vue';
 import LoadingSpinner from '@/UI/LoadingSpinner.vue';
 import BaseButton from '@/UI/BaseButton.vue';
+import ShippingAddress from '@/modules/Cart/ShippingAddress.vue';
 
 const loading = ref<boolean>(false);
 </script>
