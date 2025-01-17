@@ -12,7 +12,7 @@ const props = withDefaults(defineProps<{
 	icon?: string;
 	style?: 'primary' | 'secondary';
 	rounded?: boolean;
-	size?: 'l' | 'm' | 's';
+	size?: 'l' | 'm' | 's' | 'xs';
 }>(), {
 	type: 'button',
 	style: 'primary',
@@ -40,6 +40,8 @@ const btnSize = computed(() => {
 			return 'py-4 px-8';
 		case 's':
 			return 'py-2 px-3';
+		case 'xs':
+			return 'py-1 px-2';	
 		case 'm':
 		default:
 			return 'py-2 px-4';

@@ -4,7 +4,8 @@
         :required="required"
         :placeholder="placeholder"
         @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
-        class="border border-brand-decorative focus:outline-none focus:border-brand-text-primary hover:border-brand-secondary text-base px-4"
+        :class="[withBorder && 'border-b-2 border-b-brand-interactive']"
+        class="border border-brand-decorative focus:outline-none focus:border-brand-text-primary hover:border-brand-secondary text-base px-4 "
     />
 </template>
 
@@ -14,5 +15,6 @@ defineProps<{
     placeholder?: string;
     required?: boolean;
     type?: string;
+    withBorder?: boolean;
 }>();
 </script>
