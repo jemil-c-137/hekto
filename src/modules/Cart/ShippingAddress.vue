@@ -1,6 +1,6 @@
 <template>
     <div class="bg-brand-bg-gray p-4 rounded">
-        <p class="font-josefin text-md mb-2">Estimate Shipping</p>
+        <p class="font-josefin text- mb-2">Estimate Shipping</p>
         <div class="flex gap-8 mb-3 border-b border-brand-decorative pb-4">
             <form class="flex flex-col gap-4 w-1/2">
                 <InputField v-model="country" placeholder="Country" required with-border />
@@ -26,8 +26,8 @@
             </div>
 
             <div class="flex gap-2 items-center mb-1">
-                <input type="radio" name="standard" id="standard" v-model="delivery" value="express">
-                <label for="standard">
+                <input type="radio" name="express" id="express" v-model="delivery" value="express">
+                <label for="express">
                     <p>Express Shipping - ${{ expressPrice }}</p>
                     <p class="text-brand-muted text-xs">2-3 business days</p>
                 </label>

@@ -107,8 +107,8 @@
         "rating": 3.5,
         "reviewsCount": 20,
         "color": {
-          "name": "blakc",
-          "hexValue": "#000"
+          "name": "brown",
+          "hexValue": "#964B00"
         },
         "description": "lorem",
         "categories": ["chair"],
