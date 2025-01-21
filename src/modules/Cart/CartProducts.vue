@@ -24,10 +24,22 @@
                         </div>
                     </td>
                     <td>
-                        <p>{{ product.quantity }}</p>
+                        <p>${{ product.price }}</p>
                     </td>
                     <td>
-                        <p>{{ product.price }}</p>
+                        <div class="flex items-center justify-center rounded-lg h-12 w-fit">
+                            <button class="w-7 h-full flex items-center justify-center text-gray-400 hover:bg-gray-100 rounded-l-lg transition-colors"
+                            >
+                                <span class="text-gray-600">-</span>
+                            </button>
+                            
+                            <span class="font-semibold text-center">{{ product.quantity }}</span>
+                            
+                            <button
+                            class="w-7 h-full flex items-center justify-center text-gray-400 hover:bg-gray-100 rounded-r-lg transition-colors">
+                                <span class="text-gray-600">+</span>
+                            </button>
+                        </div>
                     </td>
                     <td>
                         <p>{{ product.totalPrice }}</p>
